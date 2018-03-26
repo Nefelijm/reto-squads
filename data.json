@@ -1,0 +1,2713 @@
+// Students Database
+
+{
+  "index": 0,
+  "name": {
+    "last": "Diaz",
+    "first": "Ana"
+  },
+  "picture": "http://placehold.it/32x32",
+  "soft_skills": {
+    "sprint_3": {
+      "comunicacion": "0.83"
+    },
+    "sprint_2": {
+      "comunicacion": "0.94"
+    },
+    "sprint_1": {
+      "comunicacion": "0.72"
+    }
+  },
+  "tech_skills": {
+    "sprint_3": "0.73",
+    "sprint_2": "0.85",
+    "sprint_1": "0.93"
+  },
+  "english": 0,
+
+  "companeras": {
+    "sprint_3": [
+      30,
+      24,
+      4
+    ],
+    "sprint_2": [
+      26,
+      15,
+      11
+    ],
+    "sprint_1": [
+      15,
+      23,
+      9
+    ]
+  }
+},
+{
+    "index": 1,
+    "name": {
+      "last": "Perez",
+      "first": "Laura"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.75"
+      },
+      "sprint_2": {
+        "comunicacion": "0.70"
+      },
+      "sprint_1": {
+        "comunicacion": "0.68"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.85",
+      "sprint_2": "0.91",
+      "sprint_1": "0.90"
+    },
+    "english": 1,
+  
+    "companeras": {
+      "sprint_3": [
+        29,
+        23,
+        3
+      ],
+      "sprint_2": [
+        25,
+        14,
+        10
+      ],
+      "sprint_1": [
+        16,
+        24,
+        8
+      ]
+    }
+  },
+  {
+    "index": 2,
+    "name": {
+      "last": "Mendez",
+      "first": "Lucia"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.82"
+      },
+      "sprint_2": {
+        "comunicacion": "0.76"
+      },
+      "sprint_1": {
+        "comunicacion": "0.70"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.84",
+      "sprint_1": "0.89"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        28,
+        25,
+        69
+      ],
+      "sprint_2": [
+        27,
+        12,
+        9
+      ],
+      "sprint_1": [
+        16,
+        20,
+        8
+      ]
+    }
+  },
+  {
+    "index": 3,
+    "name": {
+      "last": "Cabrera",
+      "first": "Carmen"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.72"
+      },
+      "sprint_2": {
+        "comunicacion": "0.65"
+      },
+      "sprint_1": {
+        "comunicacion": "0.60"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.71",
+      "sprint_2": "0.86",
+      "sprint_1": "0.85"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        27,
+        26,
+        1
+      ],
+      "sprint_2": [
+        24,
+        16,
+        6
+      ],
+      "sprint_1": [
+        14,
+        22,
+        8
+      ]
+    }
+  },
+  {
+    "index": 4,
+    "name": {
+      "last": "Mendiola",
+      "first": "Amalia"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.82"
+      },
+      "sprint_2": {
+        "comunicacion": "0.81"
+      },
+      "sprint_1": {
+        "comunicacion": "0.75"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.72",
+      "sprint_2": "0.69",
+      "sprint_1": "0.67"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        31,
+        28,
+        5
+      ],
+      "sprint_2": [
+        23,
+        11,
+        8
+      ],
+      "sprint_1": [
+        12,
+        17,
+        51
+      ]
+    }
+  },
+  {
+    "index": 5,
+    "name": {
+      "last": "Rivera",
+      "first": "Sandy"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.70"
+      },
+      "sprint_2": {
+        "comunicacion": "0.65"
+      },
+      "sprint_1": {
+        "comunicacion": "0.60"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.64",
+      "sprint_1": "0.60"
+    },
+    "english": 1,
+  
+    "companeras": {
+      "sprint_3": [
+        40,
+        20,
+        15
+      ],
+      "sprint_2": [
+        41,
+        21,
+        14
+      ],
+      "sprint_1": [
+        43,
+        22,
+        10
+      ]
+    }
+  },
+  {
+    "index": 6,
+    "name": {
+      "last": "Espinoza",
+      "first": "Sheyla"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.91"
+      },
+      "sprint_2": {
+        "comunicacion": "0.90"
+      },
+      "sprint_1": {
+        "comunicacion": "0.87"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.92",
+      "sprint_2": "0.90",
+      "sprint_1": "0.85"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        42,
+        39,
+        7
+      ],
+      "sprint_2": [
+        57,
+        52,
+        27
+      ],
+      "sprint_1": [
+        65,
+        54,
+        8
+      ]
+    }
+  },
+  {
+    "index": 7,
+    "name": {
+      "last": "Chipana",
+      "first": "Joselyn"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.89"
+      },
+      "sprint_2": {
+        "comunicacion": "0.90"
+      },
+      "sprint_1": {
+        "comunicacion": "0.85"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.81",
+      "sprint_1": "0.75"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        6,
+        8,
+        10
+      ],
+      "sprint_2": [
+        24,
+        35,
+        59
+      ],
+      "sprint_1": [
+        71,
+        70,
+        69
+      ]
+    }
+  },
+  {
+    "index": 8,
+    "name": {
+      "last": "Bernales",
+      "first": "Claudia"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.75"
+      },
+      "sprint_2": {
+        "comunicacion": "0.80"
+      },
+      "sprint_1": {
+        "comunicacion": "0.70"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.79",
+      "sprint_2": "0.80",
+      "sprint_1": "0.73"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        7,
+        6,
+        5
+      ],
+      "sprint_2": [
+        2,
+        1,
+        12
+      ],
+      "sprint_1": [
+        3,
+        4,
+        9
+      ]
+    }
+  },
+  {
+    "index": 9,
+    "name": {
+      "last": "Vargas",
+      "first": "Andrea"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.84"
+      },
+      "sprint_2": {
+        "comunicacion": "0.90"
+      },
+      "sprint_1": {
+        "comunicacion": "0.87"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.69",
+      "sprint_2": "0.76",
+      "sprint_1": "0.68"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        70,
+        16,
+        7
+      ],
+      "sprint_2": [
+        15,
+        12,
+        24
+      ],
+      "sprint_1": [
+        17,
+        20,
+        2
+      ]
+    }
+  },
+  {
+    "index": 10,
+    "name": {
+      "last": "Ramirez",
+      "first": "Chabelly"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.63"
+      },
+      "sprint_2": {
+        "comunicacion": "0.60"
+      },
+      "sprint_1": {
+        "comunicacion": "0.57"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.69",
+      "sprint_1": "0.65"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        72,
+        70,
+        1
+      ],
+      "sprint_2": [
+        59,
+        67,
+        11
+      ],
+      "sprint_1": [
+        16,
+        22,
+        43
+      ]
+    }
+  },
+  {
+    "index": 11,
+    "name": {
+      "last": "Guadalupe",
+      "first": "Angeles"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.80"
+      },
+      "sprint_2": {
+        "comunicacion": "0.79"
+      },
+      "sprint_1": {
+        "comunicacion": "0.73"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.76",
+      "sprint_2": "0.81",
+      "sprint_1": "0.76"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        55,
+        12,
+        1
+      ],
+      "sprint_2": [
+        56,
+        75,
+        43
+      ],
+      "sprint_1": [
+        18,
+        22,
+        7
+      ]
+    }
+  },
+  {
+    "index": 12,
+    "name": {
+      "last": "Lazo",
+      "first": "Mercedes"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.93"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.82"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.78",
+      "sprint_2": "0.84",
+      "sprint_1": "0.80"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        7,
+        11,
+        17
+      ],
+      "sprint_2": [
+        20,
+        24,
+        30
+      ],
+      "sprint_1": [
+        21,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 13,
+    "name": {
+      "last": "Cavero",
+      "first": "Ruth"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.65"
+      },
+      "sprint_2": {
+        "comunicacion": "0.59"
+      },
+      "sprint_1": {
+        "comunicacion": "0.60"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.71",
+      "sprint_1": "0.69"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        14,
+        17,
+        22
+      ],
+      "sprint_2": [
+        31,
+        35,
+        45
+      ],
+      "sprint_1": [
+        18,
+        20,
+        32
+      ]
+    }
+  },
+  {
+    "index": 14,
+    "name": {
+      "last": "Lopez",
+      "first": "Karen"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.75"
+      },
+      "sprint_2": {
+        "comunicacion": "0.70"
+      },
+      "sprint_1": {
+        "comunicacion": "0.68"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.71",
+      "sprint_2": "0.74",
+      "sprint_1": "0.67"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        13,
+        51,
+        28
+      ],
+      "sprint_2": [
+        24,
+        15,
+        57
+      ],
+      "sprint_1": [
+        41,
+        35,
+        62
+      ]
+    }
+  },
+  {
+    "index": 15,
+    "name": {
+      "last": "Ferreyros",
+      "first": "Margarita"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.65"
+      },
+      "sprint_2": {
+        "comunicacion": "0.70"
+      },
+      "sprint_1": {
+        "comunicacion": "0.60"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.71",
+      "sprint_2": "0.80",
+      "sprint_1": "0.75"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        5,
+        23,
+        29
+      ],
+      "sprint_2": [
+        37,
+        39,
+        43
+      ],
+      "sprint_1": [
+        55,
+        61,
+        70
+      ]
+    }
+  },
+  {
+    "index": 16,
+    "name": {
+      "last": "Carpio",
+      "first": "Maggie"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.87"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.87"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.75",
+      "sprint_2": "0.80",
+      "sprint_1": "0.70"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        51,
+        53,
+        32
+      ],
+      "sprint_2": [
+        58,
+        61,
+        21
+      ],
+      "sprint_1": [
+        46,
+        65,
+        68
+      ]
+    }
+  },
+  {
+    "index": 17,
+    "name": {
+      "last": "Ruiz",
+      "first": "Magaly"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.80"
+      },
+      "sprint_2": {
+        "comunicacion": "0.72"
+      },
+      "sprint_1": {
+        "comunicacion": "0.70"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.69",
+      "sprint_2": "0.70",
+      "sprint_1": "0.65"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        63,
+        67,
+        71
+      ],
+      "sprint_2": [
+        21,
+        6,
+        50
+      ],
+      "sprint_1": [
+        20,
+        23,
+        18
+      ]
+    }
+  },
+  {
+    "index": 18,
+    "name": {
+      "last": "Reyes",
+      "first": "Adela"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.80"
+      },
+      "sprint_2": {
+        "comunicacion": "0.75"
+      },
+      "sprint_1": {
+        "comunicacion": "0.62"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.62",
+      "sprint_2": "0.60",
+      "sprint_1": "0.71"
+    },
+    "english": 1,
+  
+    "companeras": {
+      "sprint_3": [
+        19,
+        23,
+        55
+      ],
+      "sprint_2": [
+        68,
+        75,
+        67
+      ],
+      "sprint_1": [
+        17,
+        20,
+        51
+      ]
+    }
+  },
+  {
+    "index": 19,
+    "name": {
+      "last": "Duarte",
+      "first": "Clara"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.73"
+      },
+      "sprint_2": {
+        "comunicacion": "0.70"
+      },
+      "sprint_1": {
+        "comunicacion": "0.69"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.72",
+      "sprint_2": "0.80",
+      "sprint_1": "0.75"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        39,
+        47,
+        54
+      ],
+      "sprint_2": [
+        56,
+        62,
+        70
+      ],
+      "sprint_1": [
+        38,
+        44,
+        20
+      ]
+    }
+  },
+  {
+    "index": 20,
+    "name": {
+      "last": "Campos",
+      "first": "Fabiola"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.75"
+      },
+      "sprint_2": {
+        "comunicacion": "0.70"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.65",
+      "sprint_1": "0.63"
+    },
+    "english": 1,
+  
+    "companeras": {
+      "sprint_3": [
+        13,
+        9,
+        21
+      ],
+      "sprint_2": [
+        12,
+        22,
+        23
+      ],
+      "sprint_1": [
+        5,
+        17,
+        19
+      ]
+    }
+  },
+  {
+    "index": 21,
+    "name": {
+      "last": "Aguilar",
+      "first": "Lidia"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.80"
+      },
+      "sprint_2": {
+        "comunicacion": "0.75"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.60",
+      "sprint_2": "0.57",
+      "sprint_1": "0.52"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        20,
+        12,
+        37
+      ],
+      "sprint_2": [
+        17,
+        16,
+        41
+      ],
+      "sprint_1": [
+        57,
+        65,
+        66
+      ]
+    }
+  },
+  {
+    "index": 22,
+    "name": {
+      "last": "Zavala",
+      "first": "Naomi"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.69"
+      },
+      "sprint_2": {
+        "comunicacion": "0.70"
+      },
+      "sprint_1": {
+        "comunicacion": "0.62"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.75",
+      "sprint_2": "0.71",
+      "sprint_1": "0.70"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        13,
+        55,
+        68
+      ],
+      "sprint_2": [
+        20,
+        70,
+        49
+      ],
+      "sprint_1": [
+        11,
+        10,
+        3
+      ]
+    }
+  },
+  {
+    "index": 23,
+    "name": {
+      "last": "Medrano",
+      "first": "Gloria"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        35,
+        47,
+        59
+      ],
+      "sprint_2": [
+        24,
+        14,
+        10
+      ],
+      "sprint_1": [
+        68,
+        63,
+        44
+      ]
+    }
+  },
+  {
+    "index": 24,
+    "name": {
+      "last": "Caceres",
+      "first": "Fresia"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.73"
+      },
+      "sprint_2": {
+        "comunicacion": "0.74"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.75",
+      "sprint_2": "0.87",
+      "sprint_1": "0.80"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        25,
+        21,
+        20
+      ],
+      "sprint_2": [
+        35,
+        31,
+        23
+      ],
+      "sprint_1": [
+        15,
+        27,
+        19
+      ]
+    }
+  },
+  {
+    "index": 25,
+    "name": {
+      "last": "Carrillo",
+      "first": "Mariela"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.93"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.92"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.93",
+      "sprint_2": "0.95",
+      "sprint_1": "0.90"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        24,
+        27,
+        31
+      ],
+      "sprint_2": [
+        37,
+        40,
+        45
+      ],
+      "sprint_1": [
+        50,
+        53,
+        70
+      ]
+    }
+  },
+  {
+    "index": 26,
+    "name": {
+      "last": "Flores",
+      "first": "Marisol"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.74"
+      },
+      "sprint_2": {
+        "comunicacion": "0.67"
+      },
+      "sprint_1": {
+        "comunicacion": "0.70"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.76",
+      "sprint_1": "0.79"
+    },
+    "english": 1,
+  
+    "companeras": {
+      "sprint_3": [
+        54,
+        64,
+        70
+      ],
+      "sprint_2": [
+        20,
+        24,
+        34
+      ],
+      "sprint_1": [
+        10,
+        7,
+        63
+      ]
+    }
+  },
+  {
+    "index": 27,
+    "name": {
+      "last": "Molina",
+      "first": "Donna"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.64"
+      },
+      "sprint_2": {
+        "comunicacion": "0.71"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.74",
+      "sprint_2": "0.70",
+      "sprint_1": "0.63"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        54,
+        21,
+        30
+      ],
+      "sprint_2": [
+        35,
+        37,
+        42
+      ],
+      "sprint_1": [
+        43,
+        51,
+        13
+      ]
+    }
+  },
+  {
+    "index": 28,
+    "name": {
+      "last": "Montes",
+      "first": "Maritza"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.75"
+      },
+      "sprint_2": {
+        "comunicacion": "0.74"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.83",
+      "sprint_2": "0.75",
+      "sprint_1": "0.73"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        11,
+        27,
+        30
+      ],
+      "sprint_2": [
+        22,
+        35,
+        45
+      ],
+      "sprint_1": [
+        47,
+        33,
+        54
+      ]
+    }
+  },
+  {
+    "index": 29,
+    "name": {
+      "last": "Herrera",
+      "first": "Caroline"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.75"
+      },
+      "sprint_2": {
+        "comunicacion": "0.74"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.83",
+      "sprint_2": "0.84",
+      "sprint_1": "0.73"
+    },
+    "english": 2,
+  
+    "companeras": {
+      "sprint_3": [
+        37,
+        55,
+        68
+      ],
+      "sprint_2": [
+        69,
+        70,
+        17
+      ],
+      "sprint_1": [
+        24,
+        39,
+        42
+      ]
+    }
+  },
+  {
+    "index": 30,
+    "name": {
+      "last": "Laurente",
+      "first": "Miriam"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.93"
+      },
+      "sprint_2": {
+        "comunicacion": "0.90"
+      },
+      "sprint_1": {
+        "comunicacion": "0.82"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.75",
+      "sprint_2": "0.65",
+      "sprint_1": "0.73"
+    },
+    "english": 1,
+  
+    "companeras": {
+      "sprint_3": [
+        37,
+        54,
+        57
+      ],
+      "sprint_2": [
+        28,
+        32,
+        59
+      ],
+      "sprint_1": [
+        41,
+        60,
+        3
+      ]
+    }
+  },
+  {
+    "index": 31,
+    "name": {
+      "last": "Buendia",
+      "first": "Catalina"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.80"
+      },
+      "sprint_2": {
+        "comunicacion": "0.84"
+      },
+      "sprint_1": {
+        "comunicacion": "0.82"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.70",
+      "sprint_2": "0.80",
+      "sprint_1": "0.78"
+    },
+    "english": 3,
+  
+    "companeras": {
+      "sprint_3": [
+        27,
+        20,
+        4
+      ],
+      "sprint_2": [
+        22,
+        15,
+        10
+      ],
+      "sprint_1": [
+        17,
+        33,
+        49
+      ]
+    }
+  },
+  {
+    "index": 32,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+  {
+    "index": 0,
+    "name": {
+      "last": "Daniels",
+      "first": "Mcgee"
+    },
+    "picture": "http://placehold.it/32x32",
+    "soft_skills": {
+      "sprint_3": {
+        "comunicacion": "0.83"
+      },
+      "sprint_2": {
+        "comunicacion": "0.94"
+      },
+      "sprint_1": {
+        "comunicacion": "0.72"
+      }
+    },
+    "tech_skills": {
+      "sprint_3": "0.73",
+      "sprint_2": "0.85",
+      "sprint_1": "0.93"
+    },
+    "english": 0,
+  
+    "companeras": {
+      "sprint_3": [
+        30,
+        24,
+        4
+      ],
+      "sprint_2": [
+        26,
+        15,
+        11
+      ],
+      "sprint_1": [
+        15,
+        23,
+        9
+      ]
+    }
+  },
+
+
