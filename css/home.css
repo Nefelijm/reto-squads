@@ -1,0 +1,52 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.image-logo{
+  position: relative;
+  top: 3vh;
+  width: 32vh;
+}
+.color-lab{
+  background-color: #ffc107;
+  height: 10.5vh;
+}
+/**/
+.user-box{
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5em;
+  padding: 1vh;
+}
+.name-user{
+  font-size: 1.1em;
+}
+.email-user{
+  font-size: 0.8em;
+}
+.mt{
+  margin-top: 1.3em;
+}
+.text-uppercase{
+  text-transform: uppercase;
+}
+/* Especializaciones cajas */
+.text-title{
+  padding-left: 1.4em;
+}
+.course-box{
+  height: 6em;
+  width: 25em;
+  line-height: 5em;
+  box-sizing: border-box;
+  background-color: oldlace;
+  border: 2px solid gainsboro;
+  margin-bottom: 1em;
+  position: relative;
+  left: 2.5em;
+  top: 2em;
+}
+.text-course{
+  padding-left: 2em;
+  font-size: 1.6em;
+}
