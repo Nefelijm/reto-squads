@@ -1,0 +1,24 @@
+{
+  "name": "reto-squads",
+  "version": "1.0.0",
+  "description": " Herramienta de distribución de squads que facilita su gestión a las Training Managers.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/darcycervh/reto-squads.git"
+  },
+  "author": "Nefeli,carlita,paty,jasmin,darcy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/darcycervh/reto-squads/issues"
+  },
+  "homepage": "https://github.com/darcycervh/reto-squads#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3"
+  }
+}
