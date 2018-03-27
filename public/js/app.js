@@ -7,7 +7,7 @@ var config = {
   messagingSenderId: '936978345317'
 };
 firebase.initializeApp(config);
-const dbRefObject = firebase.database().ref();
+
 
 // Ingresar con google
 var $btn = $('#btnGoogle');
@@ -21,6 +21,7 @@ function signInGoogle() {
     $user = result.user;
     // ...
     console.log($user);
+    window.location.href = '../views/home.html';
   });
 }
 // Ingresar con correo y contraseña
@@ -46,7 +47,7 @@ function signInEmail() {
 
 
 /** **Funcionalidad de Squas */
-
+const dbRefObject = firebase.database().ref();
 
 organizar();
 var newSq1;
