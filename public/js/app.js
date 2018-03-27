@@ -1,33 +1,34 @@
 var config = {
-  apiKey: "AIzaSyAAtrPpz9IUt-U-OITqwN1Bj6eGFegAwnE",
-  authDomain: "squadsdist.firebaseapp.com",
-  databaseURL: "https://squadsdist.firebaseio.com",
-  projectId: "squadsdist",
-  storageBucket: "",
-  messagingSenderId: "936978345317"
+  apiKey: 'AIzaSyAAtrPpz9IUt-U-OITqwN1Bj6eGFegAwnE',
+  authDomain: 'squadsdist.firebaseapp.com',
+  databaseURL: 'https://squadsdist.firebaseio.com',
+  projectId: 'squadsdist',
+  storageBucket: 'squadsdist.appspot.com',
+  messagingSenderId: '936978345317'
 };
 firebase.initializeApp(config);
-//Ingresar con google
+const dbRefObject = firebase.database().ref();
+
+// Ingresar con google
 var $btn = $('#btnGoogle');
 var $user = null;
 
-  $btn.on('click',signInGoogle);
+$btn.on('click', signInGoogle);
 
-  function signInGoogle() {
+function signInGoogle() {
   var provider = new firebase.auth.GoogleAuthProvider();
   firebase.auth().signInWithPopup(provider).then(function(result) {
     $user = result.user;
     // ...
     console.log($user);
-    
-  })
+  });
 }
-//Ingresar con correo y contraseña
+// Ingresar con correo y contraseña
 var $email = $('#email').val();
 var $password = $('#password').val();
 var $btnCorreo = $('#btnCorreo');
 
-$btnCorreo.on('click',signInEmail);
+$btnCorreo.on('click', signInEmail);
 
 function signInEmail() {
   firebase.auth().createUserWithEmailAndPassword($email, $password).catch(function(error) {
@@ -38,29 +39,28 @@ function signInEmail() {
   });
 }
 
-//Formulario materialize
-$(document).ready(function() {
-  M.updateTextFields();
-});
+// Formulario materialize
+// $(document).ready(function() {
+//   M.updateTextFields();
+// });
 
 
-/****Funcionalidad de Squas */
+/** **Funcionalidad de Squas */
 
-const dbRefObject = firebase.database().ref();
 
 organizar();
-var newSq1
-var newSq2
-var newSq3
-var newSq4
-var newSq5
+var newSq1;
+var newSq2;
+var newSq3;
+var newSq4;
+var newSq5;
 var validate1 = true;
 var validate2 = true;
 var validate3 = true;
 
 function organizar() {
   // sincronizar cambios
-  dbRefObject.on('value', function (snap) {
+  dbRefObject.on('value', function(snap) {
     console.log(snap.val());
 
     // STUDENTS
@@ -71,12 +71,12 @@ function organizar() {
     var sq4 = [];
     var sq5 = [];
     var arrStudiantesProm = [];
-    students.forEach(function (element) {
+    students.forEach(function(element) {
       var promStudent;
       var englishStudents = element.english;
       var englishNote;
 
-      //console.log(englishStudents);
+      // console.log(englishStudents);
       if (englishStudents === 0) {
         // console.log('cero');
         englishNote = 0.25;
@@ -108,7 +108,7 @@ function organizar() {
       arrStudiantesProm.push([element.index, promStudent]);
     });
     bubble(arrStudiantesProm);
-    //console.log(arrStudiantesProm);
+    // console.log(arrStudiantesProm);
     var arrMax = arrStudiantesProm.slice(0, 10);
     var arrPro = arrStudiantesProm.slice(10, 20);
     var arrMin = arrStudiantesProm.slice(20, 30);
@@ -139,8 +139,6 @@ function organizar() {
     console.log(sq1);
 
 
-
-
     function newSquad(sq) {
       var newArr = [];
       for (var i = 0; i < numStudent; i++) {
@@ -148,15 +146,13 @@ function organizar() {
       }
       return newArr;
     }
-     newSq1 = newSquad(sq1);
-     newSq2 = newSquad(sq2);
-     newSq3 = newSquad(sq3);
-     newSq4 = newSquad(sq4);
-     newSq5 = newSquad(sq5);
+    newSq1 = newSquad(sq1);
+    newSq2 = newSquad(sq2);
+    newSq3 = newSquad(sq3);
+    newSq4 = newSquad(sq4);
+    newSq5 = newSquad(sq5);
 
     console.log(newSq1, newSq2, newSq3, newSq4);
-
-
 
 
     function obtenerSprint() {
@@ -164,10 +160,10 @@ function organizar() {
       return sprintNew;
     }
     // cambiar el ultimo sprint
-    document.getElementById('number-sprint').textContent = obtenerSprint();
+    //  document.getElementById('number-sprint').textContent = obtenerSprint();
 
     // agregando al DOM
-    dbRefObject.on('value', function (snapshot) {
+    dbRefObject.on('value', function(snapshot) {
       student = snapshot.val();
 
       function pintarSquad(squead, container) {
@@ -175,7 +171,7 @@ function organizar() {
         for (let i = 0; i < squead.length; i++) {
           for (let j = 0; j < student.length; j++) {
             if (squead[i] === student[j].index) {
-              //console.log(student[j].name.first);
+              // console.log(student[j].name.first);
               var names = student[j].name.first;
               var last = student[j].name.last;
               var tech = student[j].tech_skills.sprint_3;
@@ -194,30 +190,24 @@ function organizar() {
               }
               var nameEng;
               switch (eng) {
-                case 0:
-                  nameEng = '-';
-                  break;
-                case 1:
-                  nameEng = 'básico';
-                  break;
-                case 2:
-                  nameEng = 'intermedio';
-                  break;
-                case 3:
-                  nameEng = 'avanzado';
-                  break;
+              case 0:
+                nameEng = '-';
+                break;
+              case 1:
+                nameEng = 'básico';
+                break;
+              case 2:
+                nameEng = 'intermedio';
+                break;
+              case 3:
+                nameEng = 'avanzado';
+                break;
               }
 
               // console.log(start);
 
 
-              template += `<div id="${squead[i]}" class="col m4 mt-5 bloqueado" draggable=true>
-            <img src="assets/img/user.png" alt="" class="circle image-student" height="50px" width="50px"> ${start}
-            <p class="name-student">${names}  ${last} </p>
-            <p><b>Tech:</b> ${(tech * 100).toFixed(0)}%</p>
-            <p><b>Soft Skills:</b> ${(soft * 100).toFixed(0)}%</p>
-            
-          </div>`;
+              template += `<li id="${squead[i]}" class="bloqueado"  draggable=true><span class="name-student">${names}  ${last} </span></li>`;
 
               // star_border
             }
@@ -233,7 +223,7 @@ function organizar() {
     });
   });
 }
-$('#btn-reorganizar').on('click', function () {
+$('#btn-reorganizar').on('click', function() {
   $('#sq1').empty();
   $('#sq2').empty();
   $('#sq3').empty();
@@ -267,12 +257,11 @@ var boxMarco = document.querySelectorAll('.dropheigth');
 
 function drag(event) {
   event.dataTransfer.setData('text', event.target.id);
-
+  console.log('hola');
 }
 
 function permitirDrop(event) {
   event.preventDefault();
-
 }
 
 function drop(event) {
@@ -280,8 +269,6 @@ function drop(event) {
   boxDrop = event.target.id;
   var idName = parseInt(event.dataTransfer.getData('text'));
   if (event.target.dataset.box === 'marco-1') {
-
-
     searchSquad(newSq2, idName);
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
@@ -299,8 +286,6 @@ function drop(event) {
     event.target.appendChild(document.getElementById(idName));
   }
   if (event.target.dataset.box === 'marco-2') {
-
-
     searchSquad(newSq1, idName);
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
@@ -369,20 +354,16 @@ function drop(event) {
   }
 
   Warming();
-  
 }
 
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
-
   if (squad.length < 6) {
-    alert('El número de personas del squad es 7')
+    alert('El número de personas del squad es 7');
     validate1 = false;
     console.log(validate1);
   }
-  
 }
-
 
 
 // Validación2 : Hay 2 estudiantes que ya han estado juntas antes. Estudiante 1 y 2. 
@@ -390,18 +371,17 @@ function Validation1(squad) {
 function Validation2(element, squad) {
   var studentSelect;
   var indexStudent;
-  dbRefObject.on('value', function (snapshot) {
+  dbRefObject.on('value', function(snapshot) {
     student = snapshot.val();
 
     for (i = 0; i < student.length; i++) {
       if (student[i].index === element) {
         studentSelect = student[i];
         indexStudent = student[i].index;
-
       }
     }
     // convirtiendo objeto en array
-    var array = $.map(studentSelect.companeras, function (value, index) {
+    var array = $.map(studentSelect.companeras, function(value, index) {
       return [value];
     });
 
@@ -421,16 +401,14 @@ function Validation2(element, squad) {
         if (newArr[k] === squad[j]) {
           alert('ya estuvieron juntas ' + squad[j]);
           validate2 = false;
-        }
-        else {
+        } else {
           validate2 = true;
         }
       }
     }
 
-    return studentSelect
-  })
-
+    return studentSelect;
+  });
 }
 
 // Validación 3 : Hay 2 estudiantes con nivel de inglés mayor de 3
@@ -438,7 +416,7 @@ function Validation2(element, squad) {
 function Validation3(element, squad) {
   var studentSelect;
   var english;
-  dbRefObject.on('value', function (snapshot) {
+  dbRefObject.on('value', function(snapshot) {
     student = snapshot.val();
 
     for (i = 0; i < student.length; i++) {
@@ -446,17 +424,13 @@ function Validation3(element, squad) {
         studentSelect = student[i];
         english = studentSelect.english;
       }
-
     }
 
     squadEnglish = [];
     for (k = 0; k < student.length; k++) {
       for (m = 0; m < squad.length; m++) {
-
         if (student[k].index === squad[m]) {
-
-          squadEnglish.push(student[k].english)
-
+          squadEnglish.push(student[k].english);
         }
       }
     }
@@ -464,32 +438,25 @@ function Validation3(element, squad) {
     englishAdvance = [];
     for (h = 0; h < squadEnglish.length; h++) {
       if (squadEnglish[h] === 3) {
-        englishAdvance.push(squadEnglish[h])
+        englishAdvance.push(squadEnglish[h]);
       }
-
     }
 
     if (englishAdvance.length > 2) {
-      alert('Hay más de 2 estudiantes con nivel de inglés mayor de 3')
+      alert('Hay más de 2 estudiantes con nivel de inglés mayor de 3');
       validate3 = false;
-    }
-    else {
+    } else {
       validate3 = true;
     }
-
-
-
-  })
-
+  });
 }
 
 
-
 // bloqueado al guardar  
-$('#btn-guardar').on('click', function () {
-  $('.bloqueado').attr('draggable', false);
-  $('.container-images').addClass('plomo');
-});
+// $('#btn-guardar').on('click', function () {
+//   $('.bloqueado').attr('draggable', false);
+//   $('.container-images').addClass('plomo');
+// });
 
 // encontrar el squad y borrar el elemento
 function searchSquad(squad, id) {
@@ -498,7 +465,6 @@ function searchSquad(squad, id) {
       var index = squad.indexOf(id);
       if (index > -1) {
         squad.splice(index, 1);
-
       }
     }
   }
@@ -514,6 +480,4 @@ function Warming() {
   if (!validate1) {
     box.innerHTML += message1;
   }
-  
-
 }
