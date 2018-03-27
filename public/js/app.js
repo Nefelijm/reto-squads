@@ -61,6 +61,7 @@ var validate3 = true;
 function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
+
     console.log(snap.val());
 
     // STUDENTS
@@ -71,7 +72,10 @@ function organizar() {
     var sq4 = [];
     var sq5 = [];
     var arrStudiantesProm = [];
+    var emailEstudent = [];
     students.forEach(function(element) {
+      console.log(element.email);
+
       var promStudent;
       var englishStudents = element.english;
       var englishNote;
@@ -152,7 +156,7 @@ function organizar() {
     newSq4 = newSquad(sq4);
     newSq5 = newSquad(sq5);
 
-    console.log(newSq1, newSq2, newSq3, newSq4);
+    // console.log(newSq1, newSq2, newSq3, newSq4);
 
 
     function obtenerSprint() {
@@ -257,7 +261,7 @@ var boxMarco = document.querySelectorAll('.dropheigth');
 
 function drag(event) {
   event.dataTransfer.setData('text', event.target.id);
-  console.log('hola');
+  // console.log('hola');
 }
 
 function permitirDrop(event) {
@@ -352,9 +356,26 @@ function drop(event) {
     Validation3(idName, newSq5);
     event.target.appendChild(document.getElementById(idName));
   }
+  // console.log(newSq1);
+  // console.log(newSq2);
+  // console.log(newSq3);
+  // console.log(newSq4);
+  // console.log(newSq5);
+  // const squad = localStorage.getItem([])
+  // console.log(squad);
+  // squad.push(newSq1);
+  // squad.push(newSq2);
+  // squad.push(newSq3); 
+  // squad.push(newSq4);
+  // localStorage.setItem('squadFinal', squad);
 
+ 
   Warming();
+  
 }
+
+
+
 
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
