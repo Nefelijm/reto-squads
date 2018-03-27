@@ -43,7 +43,7 @@ Herramienta de distribución de squads que facilita su gestión a las Training M
 ### UX Designers
 
 - [Darcy Cervera](https://github.com/darcycervh)
--[Yasmin Mattos](https://github.com/YasminMattos)
+- [Yasmin Mattos](https://github.com/YasminMattos)
 
 
 
