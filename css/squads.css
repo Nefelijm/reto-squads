@@ -88,3 +88,16 @@
   height: 4vh !important;
   display: inline-block;
 }
+.btn-confirm{
+  position: absolute;
+  margin-bottom: 5vh !important;
+  right: 10% !important;
+}
+.text-center{
+  text-align: center;
+}
+.btn-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
