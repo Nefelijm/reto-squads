@@ -5,24 +5,59 @@
 }
 .image-logo{
   position: relative;
-  top: 3vh;
-  width: 32vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 1vh;
+  margin: auto;
+  left: 0;
+  right: 0;
+  width: 27.6vh;
+}
+.box-logo-lab{
+  height: 10.5vh;
+  box-shadow: 1px 1px 3px rgb(151, 151, 151);
 }
 .color-lab{
-  background-color: #ffc107;
+  background-color: #fbe453;
   height: 10.5vh;
+  box-shadow: 1px 1px 3px rgb(151, 151, 151);
 }
 /**/
+.div-box-nav{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  position: relative;
+  top: -2.8vh;
+  height: 80vh;
+  border-right: 1px solid lightgray;
+}
+.user-icon{
+  font-size: 2em;
+  margin-right: 1vh;
+  top: 1.5vh;
+  position: relative;
+}
+.icon-nav{
+  margin-right: 1vh;
+  font-size: 1.2em;
+}
 .user-box{
+  background-color: #fafafa;
+}
+.user-box, .box-nav{
   font-family: "Helvetica Neue", Arial, sans-serif;
   line-height: 1.5em;
   padding: 1vh;
+  padding: 3vh !important;
+  box-sizing: border-box;
 }
 .name-user{
-  font-size: 1.1em;
+  font-size: 1.1em;;
 }
 .email-user{
   font-size: 0.8em;
+  padding-left: 6.5vh;
 }
 .mt{
   margin-top: 1.3em;
@@ -30,23 +65,33 @@
 .text-uppercase{
   text-transform: uppercase;
 }
+.box-sign-out{
+  position: relative;
+  top: 46vh;
+  background-color: #fafafa;
+  border: 1PX solid lightgrey;
+}
 /* Especializaciones cajas */
 .text-title{
-  padding-left: 1.4em;
+  padding-left: 1em;
+  font-size: 2.1em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 .course-box{
   height: 6em;
   width: 25em;
   line-height: 5em;
   box-sizing: border-box;
-  background-color: oldlace;
-  border: 2px solid gainsboro;
+  background-color: #fff;
+  box-shadow: 1px 1px 2px;
   margin-bottom: 1em;
   position: relative;
-  left: 2.5em;
+  left: 1.5em;
   top: 2em;
 }
 .text-course{
   padding-left: 2em;
-  font-size: 1.6em;
+  font-size: 1.3em;
+  font-family: 'Open Sans', sans-serif;
 }
