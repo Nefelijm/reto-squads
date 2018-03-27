@@ -7,7 +7,7 @@ var config = {
   messagingSenderId: '936978345317'
 };
 firebase.initializeApp(config);
-const dbRefObject = firebase.database().ref();
+
 
 // Ingresar con google
 var $btn = $('#btnGoogle');
@@ -21,6 +21,7 @@ function signInGoogle() {
     $user = result.user;
     // ...
     console.log($user);
+    window.location.href = '../views/home.html';
   });
 }
 // Ingresar con correo y contraseña
@@ -46,7 +47,7 @@ function signInEmail() {
 
 
 /** **Funcionalidad de Squas */
-
+const dbRefObject = firebase.database().ref();
 
 organizar();
 var newSq1;
@@ -79,7 +80,10 @@ function organizar() {
     var sq8 = [];
     var sq9 = [];
     var arrStudiantesProm = [];
+    var emailEstudent = [];
     students.forEach(function(element) {
+      console.log(element.email);
+
       var promStudent;
       var englishStudents = element.english;
       var englishNote;
@@ -429,6 +433,18 @@ function drop(event) {
     Validation3(idName, newSq5);
     event.target.appendChild(document.getElementById(idName));
   }
+  // console.log(newSq1);
+  // console.log(newSq2);
+  // console.log(newSq3);
+  // console.log(newSq4);
+  // console.log(newSq5);
+  // const squad = localStorage.getItem([])
+  // console.log(squad);
+  // squad.push(newSq1);
+  // squad.push(newSq2);
+  // squad.push(newSq3); 
+  // squad.push(newSq4);
+  // localStorage.setItem('squadFinal', squad);
 
   if (event.target.dataset.box === 'marco-6') {
     searchSquad(newSq1, idName);
@@ -497,7 +513,7 @@ function drop(event) {
     event.target.appendChild(document.getElementById(idName));
   }
 
-
+ 
   Warming();
 }
 
