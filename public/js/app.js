@@ -66,7 +66,12 @@ var validate3 = true;
 function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
+<<<<<<< HEAD
+
+    console.log(snap.val());
+=======
     // console.log(snap.val());
+>>>>>>> 3e7b53a355a04bfb2014a94c011346436fc3ab4f
 
     // STUDENTS
     var students = snap.val();
@@ -80,7 +85,10 @@ function organizar() {
     var sq8 = [];
     var sq9 = [];
     var arrStudiantesProm = [];
+    var emailEstudent = [];
     students.forEach(function(element) {
+      console.log(element.email);
+
       var promStudent;
       var englishStudents = element.english;
       var englishNote;
@@ -182,10 +190,15 @@ function organizar() {
     newSq3 = newSquad(sq3);
     newSq4 = newSquad(sq4);
     newSq5 = newSquad(sq5);
+<<<<<<< HEAD
+
+    // console.log(newSq1, newSq2, newSq3, newSq4);
+=======
     newSq6 = newSquad(sq6);
     newSq7 = newSquad(sq7);
     newSq8 = newSquad(sq8);
     // newSq9 = newSquad(sq9);
+>>>>>>> 3e7b53a355a04bfb2014a94c011346436fc3ab4f
 
 
     function obtenerSprint() {
@@ -430,11 +443,30 @@ function drop(event) {
     Validation3(idName, newSq5);
     event.target.appendChild(document.getElementById(idName));
   }
+  // console.log(newSq1);
+  // console.log(newSq2);
+  // console.log(newSq3);
+  // console.log(newSq4);
+  // console.log(newSq5);
+  // const squad = localStorage.getItem([])
+  // console.log(squad);
+  // squad.push(newSq1);
+  // squad.push(newSq2);
+  // squad.push(newSq3); 
+  // squad.push(newSq4);
+  // localStorage.setItem('squadFinal', squad);
 
+ 
   Warming();
+  
 }
 
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 3e7b53a355a04bfb2014a94c011346436fc3ab4f
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
   if (squad.length < 6) {
