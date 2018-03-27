@@ -54,6 +54,10 @@ var newSq2;
 var newSq3;
 var newSq4;
 var newSq5;
+var newSq6;
+var newSq7;
+var newSq8;
+var newSq9;
 var validate1 = true;
 var validate2 = true;
 var validate3 = true;
@@ -61,8 +65,12 @@ var validate3 = true;
 function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
+<<<<<<< HEAD
 
     console.log(snap.val());
+=======
+    // console.log(snap.val());
+>>>>>>> 3e7b53a355a04bfb2014a94c011346436fc3ab4f
 
     // STUDENTS
     var students = snap.val();
@@ -71,6 +79,10 @@ function organizar() {
     var sq3 = [];
     var sq4 = [];
     var sq5 = [];
+    var sq6 = [];
+    var sq7 = [];
+    var sq8 = [];
+    var sq9 = [];
     var arrStudiantesProm = [];
     var emailEstudent = [];
     students.forEach(function(element) {
@@ -108,39 +120,61 @@ function organizar() {
 
       // promStudentArr.push(promStudent);
       // bubble(promStudentArr);
-      // console.log(promStudentArr);
+       
       arrStudiantesProm.push([element.index, promStudent]);
     });
     bubble(arrStudiantesProm);
-    // console.log(arrStudiantesProm);
-    var arrMax = arrStudiantesProm.slice(0, 10);
-    var arrPro = arrStudiantesProm.slice(10, 20);
-    var arrMin = arrStudiantesProm.slice(20, 30);
+    
+    var arrMax = arrStudiantesProm.slice(54, 72);
+    var arrPro1 = arrStudiantesProm.slice(36, 54);
+    var arrPro2 = arrStudiantesProm.slice(18, 36);
+    var arrMin = arrStudiantesProm.slice(0, 18);
 
-
+        
     var x = Math.floor((Math.random() * 10) + 1);
-    sq1.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq1.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+ 
     x = Math.floor((Math.random() * (x - 1)) + 1);
-    sq2.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq2.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 2)) + 1);
-    sq3.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq3.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 3)) + 1);
-    sq4.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq4.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 4)) + 1);
-    sq5.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq5.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 5)) + 1);
-    sq1.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq6.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 6)) + 1);
-    sq2.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq7.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 7)) + 1);
-    sq3.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq7.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 8)) + 1);
-    sq4.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq8.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 9)) + 1);
-    sq5.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
-    var numStudent = 6;
+    sq9.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
 
-    console.log(sq1);
+
+    x = Math.floor((Math.random() * (x - 10)) + 1);
+    sq1.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 11)) + 1);
+    sq2.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 12)) + 1);
+    sq3.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 13)) + 1);
+    sq4.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 14)) + 1);
+    sq5.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 15)) + 1);
+    sq6.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 16)) + 1);
+    sq7.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 17)) + 1);
+    sq8.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 18)) + 1);
+    sq9.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+     
+    
+    var numStudent = 8;
 
 
     function newSquad(sq) {
@@ -155,8 +189,15 @@ function organizar() {
     newSq3 = newSquad(sq3);
     newSq4 = newSquad(sq4);
     newSq5 = newSquad(sq5);
+<<<<<<< HEAD
 
     // console.log(newSq1, newSq2, newSq3, newSq4);
+=======
+    newSq6 = newSquad(sq6);
+    newSq7 = newSquad(sq7);
+    newSq8 = newSquad(sq8);
+    // newSq9 = newSquad(sq9);
+>>>>>>> 3e7b53a355a04bfb2014a94c011346436fc3ab4f
 
 
     function obtenerSprint() {
@@ -224,6 +265,18 @@ function organizar() {
       $(pintarSquad(newSq3, '#sq3'));
       $(pintarSquad(newSq4, '#sq4'));
       $(pintarSquad(newSq5, '#sq5'));
+      $(pintarSquad(newSq6, '#sq6'));
+      $(pintarSquad(newSq7, '#sq7'));
+      $(pintarSquad(newSq8, '#sq8'));
+      
+      localStorage.setItem('squad1', JSON.stringify(newSq1));
+      localStorage.setItem('squad2', JSON.stringify(newSq2));
+      localStorage.setItem('squad3', JSON.stringify(newSq3));
+      localStorage.setItem('squad4', JSON.stringify(newSq4));
+      localStorage.setItem('squad5', JSON.stringify(newSq5));
+      localStorage.setItem('squad6', JSON.stringify(newSq6));
+      localStorage.setItem('squad7', JSON.stringify(newSq7));
+      localStorage.setItem('squad8', JSON.stringify(newSq8));
     });
   });
 }
@@ -233,6 +286,9 @@ $('#btn-reorganizar').on('click', function() {
   $('#sq3').empty();
   $('#sq4').empty();
   $('#sq5').empty();
+  $('#sq6').empty();
+  $('#sq7').empty();
+  $('#sq8').empty();
   organizar();
 });
 
@@ -252,6 +308,7 @@ function bubble(arr) {
   return arr;
 }
 
+
 // /******DRAG AND DROP*************/
 
 document.addEventListener('dragstart', drag);
@@ -261,7 +318,6 @@ var boxMarco = document.querySelectorAll('.dropheigth');
 
 function drag(event) {
   event.dataTransfer.setData('text', event.target.id);
-  // console.log('hola');
 }
 
 function permitirDrop(event) {
@@ -277,6 +333,9 @@ function drop(event) {
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     newSq1.push(idName);
     console.log(newSq1);
     Validation1(newSq1);
@@ -284,6 +343,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq1);
     Validation3(idName, newSq1);
 
@@ -294,6 +356,9 @@ function drop(event) {
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
 
     newSq2.push(idName);
     // console.log(newSq2);
@@ -302,6 +367,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq2);
     Validation3(idName, newSq2);
     
@@ -312,6 +380,9 @@ function drop(event) {
     searchSquad(newSq2, idName);
     searchSquad(newSq4, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     newSq3.push(idName);
     console.log(newSq3);
     Validation1(newSq1);
@@ -319,6 +390,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq3);
     Validation3(idName, newSq3);
     event.target.appendChild(document.getElementById(idName));
@@ -328,6 +402,9 @@ function drop(event) {
     searchSquad(newSq3, idName);
     searchSquad(newSq2, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     newSq4.push(idName);
     console.log(newSq4);
     Validation1(newSq1);
@@ -335,6 +412,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq4);
     Validation3(idName, newSq4);
 
@@ -344,6 +424,9 @@ function drop(event) {
     searchSquad(newSq1, idName);
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     searchSquad(newSq2, idName);
     newSq5.push(idName);
     console.log(newSq5);
@@ -352,6 +435,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq5);
     Validation3(idName, newSq5);
     event.target.appendChild(document.getElementById(idName));
@@ -375,8 +461,11 @@ function drop(event) {
 }
 
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 3e7b53a355a04bfb2014a94c011346436fc3ab4f
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
   if (squad.length < 6) {
@@ -501,4 +590,69 @@ function Warming() {
   if (!validate1) {
     box.innerHTML += message1;
   }
+}
+
+
+/** ****Table */
+
+$('#btnExport').click(function(event) {
+  window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
+  event.preventDefault();
+});
+
+// obteniendo squads:
+
+var squad1t = JSON.parse(localStorage.squad1);
+var squad2t = JSON.parse(localStorage.squad2);
+var squad3t = JSON.parse(localStorage.squad3);
+var squad4t = JSON.parse(localStorage.squad4);
+var squad5t = JSON.parse(localStorage.squad5);
+var squad6t = JSON.parse(localStorage.squad6);
+var squad7t = JSON.parse(localStorage.squad7);
+var squad8t = JSON.parse(localStorage.squad8);
+
+var array1 = []; 
+var array2 = [];
+var array3 = []; 
+var array4 = [];
+var array5 = [];
+var array6 = [];
+var array7 = [];
+var array8 = [];      
+dbRefObject.on('value', function(snap) {
+  var nameStudents = snap.val();
+
+  var colum1 = [squad1t[0], squad2t[0], squad3t[0], squad4t[0], squad5t[0], squad6t[0], squad7t[0], squad8t[0]];
+  var colum2 = [squad1t[1], squad2t[1], squad3t[1], squad4t[1], squad5t[1], squad6t[1], squad7t[1], squad8t[1]];
+  var colum3 = [squad1t[2], squad2t[2], squad3t[2], squad4t[2], squad5t[2], squad6t[2], squad7t[2], squad8t[2]];
+  var colum4 = [squad1t[3], squad2t[3], squad3t[3], squad4t[3], squad5t[3], squad6t[3], squad7t[3], squad8t[3]];
+  var colum5 = [squad1t[4], squad2t[4], squad3t[4], squad4t[4], squad5t[4], squad6t[4], squad7t[4], squad8t[4]];
+  var colum6 = [squad1t[5], squad2t[5], squad3t[5], squad4t[5], squad5t[5], squad6t[5], squad7t[5], squad8t[5]];
+  var colum7 = [squad1t[6], squad2t[6], squad3t[6], squad4t[6], squad5t[6], squad6t[6], squad7t[6], squad8t[6]];
+  var colum8 = [squad1t[7], squad2t[7], squad3t[7], squad4t[7], squad5t[7], squad6t[7], squad7t[7], squad8t[7]];
+
+  memberSquad(colum1, array1, nameStudents, '#squad1t') ;
+
+  memberSquad(colum2, array2, nameStudents, '#squad2t') ;
+  memberSquad(colum3, array3, nameStudents, '#squad3t') ;
+  memberSquad(colum4, array4, nameStudents, '#squad4t') ;
+  memberSquad(colum5, array5, nameStudents, '#squad5t') ;
+  memberSquad(colum6, array6, nameStudents, '#squad6t') ;
+  memberSquad(colum7, array7, nameStudents, '#squad7t') ;
+  memberSquad(colum8, array8, nameStudents, '#squad8t') ;
+});
+
+
+function memberSquad(squad, array, arrayTotal, dom) {
+  for (p = 0; p < squad.length;p++) {
+    for (q = 0; q < arrayTotal.length ; q++) {
+      if (squad[p] === arrayTotal[q].index) {
+        array.push(arrayTotal[q].name);
+      }
+    }
+  }
+  array.map(element => {
+    var template = `<td>${element.first} ${element.last}</td>`;
+    $(dom).append(template);
+  });
 }
