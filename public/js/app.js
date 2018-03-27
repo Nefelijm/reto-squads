@@ -54,6 +54,10 @@ var newSq2;
 var newSq3;
 var newSq4;
 var newSq5;
+var newSq6;
+var newSq7;
+var newSq8;
+var newSq9;
 var validate1 = true;
 var validate2 = true;
 var validate3 = true;
@@ -61,7 +65,7 @@ var validate3 = true;
 function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
-    console.log(snap.val());
+    // console.log(snap.val());
 
     // STUDENTS
     var students = snap.val();
@@ -70,6 +74,10 @@ function organizar() {
     var sq3 = [];
     var sq4 = [];
     var sq5 = [];
+    var sq6 = [];
+    var sq7 = [];
+    var sq8 = [];
+    var sq9 = [];
     var arrStudiantesProm = [];
     students.forEach(function(element) {
       var promStudent;
@@ -104,39 +112,61 @@ function organizar() {
 
       // promStudentArr.push(promStudent);
       // bubble(promStudentArr);
-      // console.log(promStudentArr);
+       
       arrStudiantesProm.push([element.index, promStudent]);
     });
     bubble(arrStudiantesProm);
-    // console.log(arrStudiantesProm);
-    var arrMax = arrStudiantesProm.slice(0, 10);
-    var arrPro = arrStudiantesProm.slice(10, 20);
-    var arrMin = arrStudiantesProm.slice(20, 30);
+    
+    var arrMax = arrStudiantesProm.slice(54, 72);
+    var arrPro1 = arrStudiantesProm.slice(36, 54);
+    var arrPro2 = arrStudiantesProm.slice(18, 36);
+    var arrMin = arrStudiantesProm.slice(0, 18);
 
-
+        
     var x = Math.floor((Math.random() * 10) + 1);
-    sq1.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq1.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+ 
     x = Math.floor((Math.random() * (x - 1)) + 1);
-    sq2.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq2.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 2)) + 1);
-    sq3.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq3.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 3)) + 1);
-    sq4.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq4.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 4)) + 1);
-    sq5.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq5.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 5)) + 1);
-    sq1.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq6.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 6)) + 1);
-    sq2.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq7.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 7)) + 1);
-    sq3.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq7.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 8)) + 1);
-    sq4.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
+    sq8.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
     x = Math.floor((Math.random() * (x - 9)) + 1);
-    sq5.push((arrMax.splice(x, 1)), (arrPro.splice(x, 1)), (arrMin.splice(x, 1)));
-    var numStudent = 6;
+    sq9.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
 
-    console.log(sq1);
+
+    x = Math.floor((Math.random() * (x - 10)) + 1);
+    sq1.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 11)) + 1);
+    sq2.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 12)) + 1);
+    sq3.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 13)) + 1);
+    sq4.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 14)) + 1);
+    sq5.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 15)) + 1);
+    sq6.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 16)) + 1);
+    sq7.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 17)) + 1);
+    sq8.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+    x = Math.floor((Math.random() * (x - 18)) + 1);
+    sq9.push((arrMax.splice(x, 1)), (arrPro1.splice(x, 1)), (arrPro2.splice(x, 1)), (arrMin.splice(x, 1)));
+     
+    
+    var numStudent = 8;
 
 
     function newSquad(sq) {
@@ -151,8 +181,10 @@ function organizar() {
     newSq3 = newSquad(sq3);
     newSq4 = newSquad(sq4);
     newSq5 = newSquad(sq5);
-
-    console.log(newSq1, newSq2, newSq3, newSq4);
+    newSq6 = newSquad(sq6);
+    newSq7 = newSquad(sq7);
+    newSq8 = newSquad(sq8);
+    // newSq9 = newSquad(sq9);
 
 
     function obtenerSprint() {
@@ -220,6 +252,10 @@ function organizar() {
       $(pintarSquad(newSq3, '#sq3'));
       $(pintarSquad(newSq4, '#sq4'));
       $(pintarSquad(newSq5, '#sq5'));
+      $(pintarSquad(newSq6, '#sq6'));
+      $(pintarSquad(newSq7, '#sq7'));
+      $(pintarSquad(newSq8, '#sq8'));
+      // $(pintarSquad(newSq9, '#sq9'));
     });
   });
 }
@@ -229,6 +265,9 @@ $('#btn-reorganizar').on('click', function() {
   $('#sq3').empty();
   $('#sq4').empty();
   $('#sq5').empty();
+  $('#sq6').empty();
+  $('#sq7').empty();
+  $('#sq8').empty();
   organizar();
 });
 
@@ -257,7 +296,6 @@ var boxMarco = document.querySelectorAll('.dropheigth');
 
 function drag(event) {
   event.dataTransfer.setData('text', event.target.id);
-  console.log('hola');
 }
 
 function permitirDrop(event) {
@@ -273,6 +311,9 @@ function drop(event) {
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     newSq1.push(idName);
     console.log(newSq1);
     Validation1(newSq1);
@@ -280,6 +321,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq1);
     Validation3(idName, newSq1);
 
@@ -290,6 +334,9 @@ function drop(event) {
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
 
     newSq2.push(idName);
     // console.log(newSq2);
@@ -298,6 +345,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq2);
     Validation3(idName, newSq2);
     
@@ -308,6 +358,9 @@ function drop(event) {
     searchSquad(newSq2, idName);
     searchSquad(newSq4, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     newSq3.push(idName);
     console.log(newSq3);
     Validation1(newSq1);
@@ -315,6 +368,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq3);
     Validation3(idName, newSq3);
     event.target.appendChild(document.getElementById(idName));
@@ -324,6 +380,9 @@ function drop(event) {
     searchSquad(newSq3, idName);
     searchSquad(newSq2, idName);
     searchSquad(newSq5, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     newSq4.push(idName);
     console.log(newSq4);
     Validation1(newSq1);
@@ -331,6 +390,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq4);
     Validation3(idName, newSq4);
 
@@ -340,6 +402,9 @@ function drop(event) {
     searchSquad(newSq1, idName);
     searchSquad(newSq3, idName);
     searchSquad(newSq4, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
     searchSquad(newSq2, idName);
     newSq5.push(idName);
     console.log(newSq5);
@@ -348,6 +413,9 @@ function drop(event) {
     Validation1(newSq3);
     Validation1(newSq4);
     Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
     Validation2(idName, newSq5);
     Validation3(idName, newSq5);
     event.target.appendChild(document.getElementById(idName));
@@ -355,6 +423,7 @@ function drop(event) {
 
   Warming();
 }
+
 
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
