@@ -20,7 +20,7 @@ Actualmente las Training Managers de Laboratoria no cuentan con una herramienta 
 
 En Laboratoria se redistribuyen los squads en cada sprint, para que las estudiantes se conozcan y se potencien entre ellas.
 
-Aprender en squads trae muchos beneficios, sin embargo, generar estos squads cada sprint es una tarea tediosa para las Training Managers. 
+Aprender en squads trae muchos beneficios. Sin embargo, generar estos squads cada sprint es una tarea tediosa para las Training Managers. 
 
 _Variables que se tienen en cuenta:_
 
@@ -68,22 +68,26 @@ En una segunda instancia se validó un segundo diseño, se determinó el número
     - Información relevante
     - Requerimientos Extras
 
-    ![Affinity map](assets/images/affinity-map.png)
+    ![Affinity map](public/assets/docs/affinity-map.png)
 
 - ### Definición y síntesis del proceso
 
 El equipo de desarrollo mediante dinámicas con post its resumió el proceso de abordaje del problema y las herramientas a usar para su resolución.
 
-![síntesis](assets/images/prueba.jpg)
+![síntesis](public/assets/docs/prueba.jpg)
 
 ## MVP
 --------
 
 ### MoSCoW : Técnica de priorización de requerimientos
 
-![moscow](assets/images/moscow.png)
+Se definió con todo el equipo de trabajo cada requerimiento en una escala de prioridad alta, media y baja:
+
+![moscow](public/assets/docs/moscow.png)
 
 ### Feature List
+
+De lo anterior se establecieron las características prioritarias de la herramienta:
 
 - El home incluirá: fecha, sprint actual y la sede de la TM
 - Los Squads se presentarán tipo boards con cards draggeables
