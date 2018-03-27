@@ -3,46 +3,101 @@
   padding: 0;
   box-sizing: border-box;
 }
+.text-track{
+  font-size: 1.4em;
+}
+.text-track, .text-map{
+  font-family: 'Roboto', sans-serif;
+}
+.text-sprint{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+}
+.text-map{
+  font-size: 1em;
+}
+.date{
+  display: flex;
+  flex-flow: row;
+  position: absolute;
+  top: 20%;
+  border: 1px solid gray;
+  border-radius: 0.6vh;
+  background-color: lightgray;
+  padding: 0.8vh 2vh;
+  left: 33% !important;
+  top: 25%;
+}
+.select-sprint{
+  border-radius: 0.6vh;
+  position: absolute;
+  right: 4.7% !important;
+  top: 25%;
+  border: 1px solid black;
+}
 .squad1{
   width: 40vh;
   height: auto;
-  background-color: lightskyblue;
-  border-radius: 1vh;
+  background-color: #e2e4e6;
+  border: 1px solid #000;
+  border-radius: 0.6vh;
   text-align: center;
   margin-right: 2vh;
+  display: inline-block;
 }
 .group-squads{
+  width: 100%;
+  height: 100%;
   display: flex;
+  flex-flow: row;
 }
 .name-squad, .name-jedi{
-  background-color: lightcyan;
+  background-color: #ea349b;
   box-sizing: border-box;
-  border-top-left-radius: 1vh;
-  border-top-right-radius: 1vh;
+  border-top-left-radius: 0.6vh;
+  border-top-right-radius: 0.6vh;
   display: flex;
+  flex-flow: column !important;
   padding-left: 2vh;
+  height: 4.8vh !important;
 }
 .name-student{
   width: 80%;
-  height: 3%;
+  height: 2%;
   display: inline-block;
-  line-height: 2.2em;
+  line-height: 1.7em;
   margin: 0.3em 0em;
   border-radius: 0.9vh;
   text-align: center;
-  background: lightgray;
+  background: #fff;
+  border: 1px solid lightgray;
 }
 .name-jedi{
-  background-color: lightgreen;
-  padding: 0.5em;
+  background-color: #87f4a3;
   box-sizing: border-box;
-  border-bottom-left-radius: 1vh;
-  border-bottom-right-radius: 1vh;
+  border-bottom-left-radius: 0.6vh;
+  border-bottom-right-radius: 0.6vh;
 }
 .squad, .jedi{
   padding-right: 2vh !important;
   padding-left: 3vh;
+  text-align: left;
 }
 .input-squad, .input-jedi{
-  width: 25vh !important;
+  width: 20vh !important;
+  height: 4vh !important;
+  display: inline-block;
+}
+.btn-confirm{
+  position: absolute;
+  margin-bottom: 5vh !important;
+  right: 10% !important;
+}
+.text-center{
+  text-align: center;
+}
+.btn-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
