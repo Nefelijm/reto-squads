@@ -670,7 +670,18 @@ var array4 = [];
 var array5 = [];
 var array6 = [];
 var array7 = [];
-var array8 = [];      
+var array8 = [];
+
+//
+var arrayemail1 = [];
+var arrayemail2 = [];
+var arrayemail3 = [];
+var arrayemail4 = [];
+var arrayemail5 = [];
+var arrayemail6 = [];
+var arrayemail7 = [];
+var arrayemail8 = [];
+
 dbRefObject.on('value', function(snap) {
   var nameStudents = snap.val();
 
@@ -685,21 +696,30 @@ dbRefObject.on('value', function(snap) {
 
   memberSquad(colum1, array1, nameStudents, '#squad1t') ;
 
-  memberSquad(colum2, array2, nameStudents, '#squad2t') ;
-  memberSquad(colum3, array3, nameStudents, '#squad3t') ;
-  memberSquad(colum4, array4, nameStudents, '#squad4t') ;
-  memberSquad(colum5, array5, nameStudents, '#squad5t') ;
-  memberSquad(colum6, array6, nameStudents, '#squad6t') ;
-  memberSquad(colum7, array7, nameStudents, '#squad7t') ;
-  memberSquad(colum8, array8, nameStudents, '#squad8t') ;
+  memberSquad(colum2, array2, arrayemail1, nameStudents, '#squad2t') ;
+  memberSquad(colum3, array3, arrayemail2, nameStudents, '#squad3t') ;
+  memberSquad(colum4, array4, arrayemail3, nameStudents, '#squad4t') ;
+  memberSquad(colum5, array5, arrayemail4, nameStudents, '#squad5t') ;
+  memberSquad(colum6, array6, arrayemail5, nameStudents, '#squad6t') ;
+  memberSquad(colum7, array7, arrayemail6, nameStudents, '#squad7t') ;
+  memberSquad(colum8, array8, arrayemail7, nameStudents, '#squad8t') ;
+  console.log(arrayemail1);
+  // var template = `<input>${element.email}`;
+  // $(dom).append(template);
+ 
+
 });
 
+$('#gmail').on('click', function(){
+  window.location.href = '../views/email.html';
+})
 
-function memberSquad(squad, array, arrayTotal, dom) {
+function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
   for (p = 0; p < squad.length;p++) {
     for (q = 0; q < arrayTotal.length ; q++) {
       if (squad[p] === arrayTotal[q].index) {
         array.push(arrayTotal[q].name);
+        arrayemail.push(arrayTotal[q].email);
       }
     }
   }
