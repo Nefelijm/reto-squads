@@ -44,9 +44,26 @@
       </div>
       <!-- Empieza el contenido de la vista squads-->
       <div class="col s10">
-        <h5 class="text-track text-uppercase">Front-end</h5>
-        <h3 class="">Sprint 2</h3>
+        <h5 class="text-track text-uppercase">Front - end</h5>
+        <h3 class="text-sprint">Sprint 2</h3>
         <h5 class="text-map">Sede Lima</h5>
+        <br>
+        <!-- select sprint -->
+        <select class="browser-default col s3 select-sprint">
+          <option value="" disabled selected>Selecciona sprint</option>
+          <option value="1">Sprint 1</option>
+          <option value="2">Sprint 2</option>
+        </select>
+        <!-- date -->
+        <div class="widget">
+          <div class="date">
+            <p class="day">27</p>
+            <p>/</p>
+            <p class="month">03</p>
+            <p>/</p>
+            <p class="year">18</p>
+          </div>
+        </div>
         <!-- grupo de squads -->
         <div class="group-squads">
           <!-- primer grupo -->
@@ -64,55 +81,12 @@
               <li><span class="name-student">alumna6</span></li>
               <li><span class="name-student">alumna7</span></li>
               <li><span class="name-student">alumna8</span></li>
-            </ul>
-            <div class="name-jedi">
-              <p class="jedi">Jedi:</p>
-              <input class="input-jedi" type="text">
-            </div>
-          </div>
-          <!-- segundo squad -->
-          <div class="squad1 squad2">
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
               </div>
-              <br>
-              <li><span class="name-student">alumna1</span></li>
-              <li><span class="name-student">alumna2</span></li>
-              <li><span class="name-student">alumna3</span></li>
-              <li><span class="name-student">alumna4</span></li>
-              <li><span class="name-student">alumna5</span></li>
-              <li><span class="name-student">alumna6</span></li>
-              <li><span class="name-student">alumna7</span></li>
-              <li><span class="name-student">alumna8</span></li>
             </ul>
-            <div class="name-jedi">
-              <p class="jedi">Jedi:</p>
-              <input class="input-jedi" type="text">
-            </div>
           </div>
-          <!-- tercero squad -->
-          <div class="squad1 squad3">
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <li><span class="name-student">alumna1</span></li>
-              <li><span class="name-student">alumna2</span></li>
-              <li><span class="name-student">alumna3</span></li>
-              <li><span class="name-student">alumna4</span></li>
-              <li><span class="name-student">alumna5</span></li>
-              <li><span class="name-student">alumna6</span></li>
-              <li><span class="name-student">alumna7</span></li>
-              <li><span class="name-student">alumna8</span></li>
-            </ul>
-            <div class="name-jedi">
-              <p class="jedi">Jedi:</p>
-              <input class="input-jedi" type="text">
-            </div>
-          </div>
-          <!-- cuarto squad -->
+          <!-- segundo grupo -->
           <div class="squad1">
             <ul>
               <div class="name-squad">
@@ -127,16 +101,161 @@
               <li><span class="name-student">alumna6</span></li>
               <li><span class="name-student">alumna7</span></li>
               <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
             </ul>
-            <div class="name-jedi">
-              <p class="jedi">Jedi:</p>
-              <input class="input-jedi" type="text">
-            </div>
           </div>
-          <!-- segundo grupo -->
+          <!-- tercer grupo -->
+          <div class="squad1">
+            <ul>
+              <div class="name-squad">
+                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              </div>
+              <br>
+              <li><span class="name-student">alumna1</span></li>
+              <li><span class="name-student">alumna2</span></li>
+              <li><span class="name-student">alumna3</span></li>
+              <li><span class="name-student">alumna4</span></li>
+              <li><span class="name-student">alumna5</span></li>
+              <li><span class="name-student">alumna6</span></li>
+              <li><span class="name-student">alumna7</span></li>
+              <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
+            </ul>
+          </div>
+          <!-- cuarto grupo -->
+          <div class="squad1">
+            <ul>
+              <div class="name-squad">
+                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              </div>
+              <br>
+              <li><span class="name-student">alumna1</span></li>
+              <li><span class="name-student">alumna2</span></li>
+              <li><span class="name-student">alumna3</span></li>
+              <li><span class="name-student">alumna4</span></li>
+              <li><span class="name-student">alumna5</span></li>
+              <li><span class="name-student">alumna6</span></li>
+              <li><span class="name-student">alumna7</span></li>
+              <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
+            </ul>
+          </div><br><br><br>
+          <!-- quinto grupo -->
+          <!--<div class="squad1 ">
+            <ul>
+              <div class="name-squad">
+                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              </div>
+              <br>
+              <li><span class="name-student">alumna1</span></li>
+              <li><span class="name-student">alumna2</span></li>
+              <li><span class="name-student">alumna3</span></li>
+              <li><span class="name-student">alumna4</span></li>
+              <li><span class="name-student">alumna5</span></li>
+              <li><span class="name-student">alumna6</span></li>
+              <li><span class="name-student">alumna7</span></li>
+              <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
+            </ul>
+          </div>-->
+          <!-- sexto grupo -->
+          <!--<div class="squad1">
+            <ul>
+              <div class="name-squad">
+                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              </div>
+              <br>
+              <li><span class="name-student">alumna1</span></li>
+              <li><span class="name-student">alumna2</span></li>
+              <li><span class="name-student">alumna3</span></li>
+              <li><span class="name-student">alumna4</span></li>
+              <li><span class="name-student">alumna5</span></li>
+              <li><span class="name-student">alumna6</span></li>
+              <li><span class="name-student">alumna7</span></li>
+              <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
+            </ul>
+          </div>-->
+          <!-- séptimo grupo -->
+          <!--<div class="squad1">
+            <ul>
+              <div class="name-squad">
+                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              </div>
+              <br>
+              <li><span class="name-student">alumna1</span></li>
+              <li><span class="name-student">alumna2</span></li>
+              <li><span class="name-student">alumna3</span></li>
+              <li><span class="name-student">alumna4</span></li>
+              <li><span class="name-student">alumna5</span></li>
+              <li><span class="name-student">alumna6</span></li>
+              <li><span class="name-student">alumna7</span></li>
+              <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
+            </ul>
+          </div>-->
+          <!-- octavo grupo -->
+          <!--<div class="squad1">
+            <ul>
+              <div class="name-squad">
+                <li class="squad">Squad: <input class="input-squad" type="text"></li>
+              </div>
+              <br>
+              <li><span class="name-student">alumna1</span></li>
+              <li><span class="name-student">alumna2</span></li>
+              <li><span class="name-student">alumna3</span></li>
+              <li><span class="name-student">alumna4</span></li>
+              <li><span class="name-student">alumna5</span></li>
+              <li><span class="name-student">alumna6</span></li>
+              <li><span class="name-student">alumna7</span></li>
+              <li><span class="name-student">alumna8</span></li>
+              <div class="name-jedi">
+                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
+              </div>
+            </ul>
+          </div>-->
+          <!-- fin de número de squads -->
         </div>
       </div>
     </div>
   </div>
+  <div class="container">
+    <div class="row">
+      <div class="col s3">
+        <button class="text-uppercase waves-effect waves-light btn amber accent-3 btn-confirm modal-trigger" href="#modal1">confirmar</button>
+        <!-- Modal Structure -->
+        <div id="modal1" class="modal">
+          <div class="modal-content text-center">
+            <p>Los squads quedaron muy bien!</p>
+            <p>¿Lista para confirmarle los squads a las estudiantes?</p>
+          </div>
+          <div class="modal-footer btn-center">
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn pink darken-3">Aceptar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- jQuery -->
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<!-- carpeta js -->
+<script src="../js/squads.js"></script>
 </body>
 </html>
