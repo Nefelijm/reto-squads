@@ -430,6 +430,74 @@ function drop(event) {
     event.target.appendChild(document.getElementById(idName));
   }
 
+  if (event.target.dataset.box === 'marco-6') {
+    searchSquad(newSq1, idName);
+    searchSquad(newSq3, idName);
+    searchSquad(newSq4, idName);
+    searchSquad(newSq5, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
+    searchSquad(newSq2, idName);
+    newSq6.push(idName);
+    console.log(newSq6);
+    Validation1(newSq1);
+    Validation1(newSq2);
+    Validation1(newSq3);
+    Validation1(newSq4);
+    Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
+    Validation2(idName, newSq6);
+    Validation3(idName, newSq6);
+    event.target.appendChild(document.getElementById(idName));
+  }
+  if (event.target.dataset.box === 'marco-7') {
+    searchSquad(newSq1, idName);
+    searchSquad(newSq3, idName);
+    searchSquad(newSq4, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq5, idName);
+    searchSquad(newSq8, idName);
+    searchSquad(newSq2, idName);
+    newSq7.push(idName);
+    console.log(newSq7);
+    Validation1(newSq1);
+    Validation1(newSq2);
+    Validation1(newSq3);
+    Validation1(newSq4);
+    Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
+    Validation2(idName, newSq7);
+    Validation3(idName, newSq7);
+    event.target.appendChild(document.getElementById(idName));
+  }
+  if (event.target.dataset.box === 'marco-8') {
+    searchSquad(newSq1, idName);
+    searchSquad(newSq3, idName);
+    searchSquad(newSq4, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq5, idName);
+    searchSquad(newSq2, idName);
+    newSq8.push(idName);
+    console.log(newSq8);
+    Validation1(newSq1);
+    Validation1(newSq2);
+    Validation1(newSq3);
+    Validation1(newSq4);
+    Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
+    Validation2(idName, newSq8);
+    Validation3(idName, newSq8);
+    event.target.appendChild(document.getElementById(idName));
+  }
+
+
   Warming();
 }
 

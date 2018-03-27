@@ -5,15 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+   <!-- FontAwesome v4.7.0-->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+   <!-- google fonts -->
+   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+   <!-- carpeta principal -->
+   <link rel="stylesheet" href="../css/home.css">
+   <!-- carpeta css -->
+   <link rel="stylesheet" href="../css/squads.css">
 </head>
 <body>
-  <input type="button" id="btnExport" value=" Export Table data into Excel " />
-
-  <button onClick= window.print()>Imprimir</button>
-  <br/>
-  <br/>
-  <div id="dvData">
-      <table>
+  <div class="center-align">
+      <button class="btn" type="button" id="btnExport" >Exportar Excel</button>
+      <button class="btn "  onClick= window.print()>Imprimir</button>
+  </div>
+  
+  
+  <div id="dvData" class="container">
+      <table class="striped">
           <tr>
               <th>Squad 1</th>
               <th>Squad 2</th>

@@ -101,3 +101,24 @@
   justify-content: center;
   align-items: center;
 }
+
+
+/*table*/
+table {
+  width: 100%;
+  border: 1px solid #000;
+}
+th, td {
+ 
+  text-align: left;
+  vertical-align: top;
+  border: 1px solid #ea349b;
+  border-collapse: collapse;
+  padding: 0.3em;
+  caption-side: bottom;
+}
+
+th{
+  background-color: #ea349b;
+  color: white;
+}
