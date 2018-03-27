@@ -97,7 +97,7 @@ El equipo de desarrollo mediante dinámicas con post its resumió el proceso de 
 
 Se elaboraron dos diseños a baja fidelidad (paper prototyping) de la herramienta, los cuales fueron consultados y sometidos a testing con la cliente (Product Owner).
 
-[Paper prototyping]()
+[Paper prototyping](https://photos.app.goo.gl/VOtcEailzeulYSj23)
 
 ## Conclusiones
 
