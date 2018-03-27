@@ -1,5 +1,4 @@
-// Students Database
-
+[
 {
   "index": 0,
   "name": {
@@ -2708,6 +2707,8 @@
         9
       ]
     }
-  },
+  }
+]
+
 
 
