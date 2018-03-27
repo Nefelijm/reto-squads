@@ -99,9 +99,15 @@ De lo anterior se establecieron las características prioritarias de la herramie
 
 ## Prototyping / Testing
 
+Día 1 
+
 Se elaboraron dos diseños a baja fidelidad (paper prototyping) de la herramienta, los cuales fueron consultados y sometidos a testing con la cliente (Product Owner).
 
-[Paper prototyping](https://photos.app.goo.gl/VOtcEailzeulYSj23)
+Día 2
+
+Se realizó el testing del diseño de la herramienta en html/css con la cliente, el feedback recogido fue: incluir la imagen de perfil de la TM, realzar los colores de la marca, que los squads se desplieguen con un scroll vertical y que se incluyan las premiaciones en el prototipo del producto. 
+
+[Paper prototyping & testing](https://photos.app.goo.gl/VOtcEailzeulYSj23)
 
 ## Conclusiones
 

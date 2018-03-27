@@ -2,7 +2,9 @@
   background-color: #ffc107;
 }
 
-.fa fa-heart {
-  outline: 2px solid green;
-  font-size: 7em;
+#heart {
+  font-size: 4em;
+  margin: 35vh auto;
+  color: #ffff;
 }
+
