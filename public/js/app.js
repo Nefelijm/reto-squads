@@ -69,7 +69,7 @@ function organizar() {
     // console.log(snap.val());
 
     // STUDENTS
-    var students = snap.val();
+   
     var sq1 = [];
     var sq2 = [];
     var sq3 = [];
@@ -80,10 +80,8 @@ function organizar() {
     var sq8 = [];
     var sq9 = [];
     var arrStudiantesProm = [];
-    var emailEstudent = [];
+  
     students.forEach(function(element) {
-      console.log(element.email);
-
       var promStudent;
       var englishStudents = element.english;
       var englishNote;
@@ -185,6 +183,8 @@ function organizar() {
     newSq3 = newSquad(sq3);
     newSq4 = newSquad(sq4);
     newSq5 = newSquad(sq5);
+
+    // console.log(newSq1, newSq2, newSq3, newSq4);
     newSq6 = newSquad(sq6);
     newSq7 = newSquad(sq7);
     newSq8 = newSquad(sq8);
@@ -672,6 +672,7 @@ var array6 = [];
 var array7 = [];
 var array8 = [];
 
+
 //
 var arrayemail1 = [];
 var arrayemail2 = [];
@@ -683,7 +684,7 @@ var arrayemail7 = [];
 var arrayemail8 = [];
 
 dbRefObject.on('value', function(snap) {
-  var nameStudents = snap.val();
+  console.log(nameStudents);
 
   var colum1 = [squad1t[0], squad2t[0], squad3t[0], squad4t[0], squad5t[0], squad6t[0], squad7t[0], squad8t[0]];
   var colum2 = [squad1t[1], squad2t[1], squad3t[1], squad4t[1], squad5t[1], squad6t[1], squad7t[1], squad8t[1]];
@@ -695,6 +696,14 @@ dbRefObject.on('value', function(snap) {
   var colum8 = [squad1t[7], squad2t[7], squad3t[7], squad4t[7], squad5t[7], squad6t[7], squad7t[7], squad8t[7]];
 
   memberSquad(colum1, array1, nameStudents, '#squad1t') ;
+  memberSquad(colum2, array2, nameStudents, '#squad2t') ;
+  memberSquad(colum3, array3, nameStudents, '#squad3t') ;
+  memberSquad(colum4, array4, nameStudents, '#squad4t') ;
+  memberSquad(colum5, array5, nameStudents, '#squad5t') ;
+  memberSquad(colum6, array6, nameStudents, '#squad6t') ;
+  memberSquad(colum7, array7, nameStudents, '#squad7t') ;
+  memberSquad(colum8, array8, nameStudents, '#squad8t') ;
+
 
   memberSquad(colum2, array2, arrayemail1, nameStudents, '#squad2t') ;
   memberSquad(colum3, array3, arrayemail2, nameStudents, '#squad3t') ;
@@ -716,11 +725,14 @@ function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
   for (p = 0; p < squad.length;p++) {
     for (q = 0; q < arrayTotal.length ; q++) {
       if (squad[p] === arrayTotal[q].index) {
+        array.push(arrayTotal[q].name);   
         array.push(arrayTotal[q].name);
         arrayemail.push(arrayTotal[q].email);
       }
     }
   }
+
+
   array.map(element => {
     var template = `<td>${element.first} ${element.last}</td>`;
     $(dom).append(template);
