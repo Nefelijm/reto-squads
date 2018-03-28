@@ -17,23 +17,32 @@
    <link rel="stylesheet" href="../css/squads.css">
 </head>
 <body class="bg-fondo">
+<<<<<<< HEAD
     <div class="center-align m-3">      
         <img src="../assets/images/logo.png" alt="logo">
     </div>
  
   
   
+=======
+  <div class="center-align m-3">  
+    <img src="../assets/images/logo.png" alt="logo">
+  </div>
+
+>>>>>>> c497704d486e925359f571dbf00b6e8c3bf23942
   <div id="dvData" class="container">
-      <table class="striped responsive-table">
+    <div class="row">
+      <div class="col s12 l12">
+        <table class="striped responsive-table">
           <tr>
-              <th>Squad 1</th>
-              <th>Squad 2</th>
-              <th>Squad 3</th>
-              <th>Squad 4</th>
-              <th>Squad 5</th>
-              <th>Squad 6</th>
-              <th>Squad 7</th>
-              <th>Squad 8</th>
+            <th>Squad 1</th>
+            <th>Squad 2</th>
+            <th>Squad 3</th>
+            <th>Squad 4</th>
+            <th>Squad 5</th>
+            <th>Squad 6</th>
+            <th>Squad 7</th>
+            <th>Squad 8</th>
           </tr>
           <tr id="squad1t">
               
@@ -60,13 +69,35 @@
               
           </tr>
           
-      </table>
+        </table>
+      </div>
+    </div> 
   </div>
 
-  <div  class="center-align m-3">
+
+  <div  class="center-align m-3 hide-on-med-and-down">
         <button class="btn btn-send #ffff00 yellow accent-2" type="button" id="btnExport" >Exportar Excel</button>
-        <button class="btn btn-send #ffff00 yellow accent-2"  onClick= window.print()>Imprimir</button>
+        <button class="btn btn-send #ffff00 yellow accent-2"  onClick= window.print()>Imprimir squads</button>
       <button class="btn btn-send #ffff00 yellow accent-2" id="gmail">ENVIAR CORREO</button>
+  </div>
+
+  <div class="center hide-on-large-only">
+    <div class="row">
+      <div class="col s12">
+        <button class="btn btn-send #ffff00 yellow accent-2" type="button" id="btnExport" >Exportar Excel</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <button class="btn btn-send #ffff00 yellow accent-2"  onClick= window.print()>Imprimir squads</button>
+       </div>
+    </div>
+    <div class="row">
+      <div class="col s12">
+        <button class="btn btn-send #ffff00 yellow accent-2" id="gmail">ENVIAR CORREO</button>
+      </div>
+    </div>
+
   </div>
 
 
@@ -76,6 +107,6 @@
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-<script src="../js/app.js"></script>
+<script src="../js/table.js"></script>
 </body>
 </html>
