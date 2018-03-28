@@ -102,3 +102,9 @@
   font-size: 1.3em;
   font-family: 'Open Sans', sans-serif;
 }
+
+.material-icons {
+  font-size: 35px;
+  color: rgb(34, 33, 33);
+  padding-top: 0.2em;
+}
