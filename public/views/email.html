@@ -4,24 +4,45 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <!-- FontAwesome v4.7.0-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- google fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="../css/squads.css">
   <title>Document</title>
 </head>
-<body>
-    <form class="alumna1" action="/cualquiera" method="POST">      
-      <textarea   name="contenido" id="texarea" cols="30" rows="10">rata</textarea> 
-      <ul>
-         
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>
-          <li> <input name="email" value="" /></li>       
-      </ul>
-      <button type="submit">Enviar mail</button>
-    </form>
+<body class="bg-fondo">
+    <div class="center-align m-3">      
+        <img src="../assets/images/logo.png" alt="logo">
+    </div>
+    <div class="container">
+        <form class="m-3" action="/cualquiera" method="POST"> 
+          <div class="alumna1 m-3" >
+          </div>
+          <div class="center-align">
+              <textarea   class="textarea-w" name="contenido" id="texarea" cols="30" rows="10">ASUNTO:</textarea>
+          </div>
+          <div class="center-align">    
+          <ul >     
+              <li class="m-2 input-w"> <input  id="alumna1" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna2" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna3" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna4" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna5" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna6" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna7" type="text" name="email" value=""></li>
+              <li class="m-2 input-w"> <input  id="alumna8" type="text" name="email" value=""></li>       
+          </ul>
+        </div>  
+          <div class="center-align">
+              <button class="boton" type="submit">Enviar mail</button>
+          </div>
+        </form>
+
+    </div>
+  
 
     <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script> 
     <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>

@@ -80,6 +80,9 @@
 .list-board {
   padding-left: 1em;
 }
+#toHome {
+  cursor: pointer;
+}
 /*table*/
 
 table{
@@ -269,3 +272,15 @@ div.alert-message a.close:hover, div.alert-box a.close:focus {
   color: black;
 }
 
+.alumna1{
+  background-color: yellow;
+  font-size: 18px;
+}
+.textarea-w{
+ width: 400px;
+ height: 150px;
+}
+.boton{
+  background-color: rgb(248, 66, 103);
+  font-size: 30px;
+}

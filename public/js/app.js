@@ -46,7 +46,29 @@ function signInEmail() {
 // $(document).ready(function() {
 //   M.updateTextFields();
 // });
+/* --------------renderizado------------- */
+var frontEnd = $('#front-end');
 
+frontEnd.on('click', function() {
+  window.location.href = '../views/squads.html';
+});
+
+var cohorts = $('#toHome');
+
+cohorts.on('click', toHome);
+
+function toHome() {
+  window.location.href = '../views/home.html';
+}
+
+/* ------------fecha -----------------*/
+var dateObj = new Date();
+var dateDay = dateObj.getDate();
+var dateMonth = dateObj.getMonth();
+var dateYear = dateObj.getFullYear();
+console.log(dateDay);
+
+$('#fecha').html(`${dateDay}/${dateMonth}/${dateYear}`) 
 
 /** **Funcionalidad de Squas */
 const dbRefObject = firebase.database().ref();
@@ -283,7 +305,10 @@ $('#btn-reorganizar').on('click', function() {
   $('#sq7').empty();
   $('#sq8').empty();
   organizar();
+  console.log(localStorage.squad1);
 });
+
+console.log(localStorage.squad1);
 
 function bubble(arr) {
   for (i = 0; i < arr.length; i++) {
@@ -611,10 +636,10 @@ function Validation3(element, squad) {
 
 
 // bloqueado al guardar  
-// $('#btn-guardar').on('click', function () {
-//   $('.bloqueado').attr('draggable', false);
-//   $('.container-images').addClass('plomo');
-// });
+$('#btn-guardar').on('click', function() {
+  $('.bloqueado').attr('draggable', false);
+  $('.container-images').addClass('plomo');
+});
 
 // encontrar el squad y borrar el elemento
 function searchSquad(squad, id) {
@@ -638,6 +663,7 @@ function Warming() {
   }
 }
 
+<<<<<<< HEAD
 
 /** ****Table ****/
 
@@ -702,7 +728,7 @@ dbRefObject.on('value', function(snap) {
   // $(dom).append(template);
 
   arrayemail1.map(element => {
-    var templa = ` <div>${element}<div>`;
+    var templa = ` <div class="center-align">${element}<div>`;
     console.log(templa);
     $('.alumna1').append(templa);
 
@@ -731,3 +757,5 @@ function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
     $(dom).append(template);
   });
 }
+=======
+>>>>>>> c497704d486e925359f571dbf00b6e8c3bf23942
