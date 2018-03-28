@@ -13,9 +13,9 @@ const dbRefObject = firebase.database().ref();
 
 /** ****Table ****/
 
-$('#btnExport').click(function(event) {
+$("#btnExport").click(function (e) {
   window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
-  event.preventDefault();
+  e.preventDefault();
 });
 
 // obteniendo squads:
