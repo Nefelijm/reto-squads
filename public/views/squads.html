@@ -17,206 +17,185 @@
   <link rel="stylesheet" href="../css/squads.css">
 </head>
 <body>
-  <section class="container-fluid">
+  <section>
     <div class="row">
       <!-- logo laboratoria -->
-      <div class="col s2 white box-logo-lab">
-        <img class="image-logo" src="../assets/docs/laboratoria-logo.jpeg.jpg" alt="Logo - Laboratoria">
+      <div class="col l3 hide-on-med-and-down white box-logo-lab">
+        <img class="image-logo responsive-img" src="../assets/docs/logo-nuevo-lab.png" alt="Logo - Laboratoria">
       </div>
       <!-- nav color de laboratoria -->
-      <div class="col s10 color-lab">
+      <div class="col s12 l9 color-lab">
       </div>
     </div>
   </section>
   <!-- -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col s2 white div-box-nav">
-        <ul>
+  <div class="row">
+    <div class="col l3 hide-on-med-and-down white div-box-nav">
+      <ul>
+        <div class="row">
           <ul class="user-box">
-            <li class="name-user"><i class="fa fa-user-circle user-icon" aria-hidden="true"></i> Alejandra Ramirez</li>
-            <li class="email-user">alejandraramirez@gmail.com</li>
+            <div class="col l3">
+              <img class="responsive-img circle" src="../assets/docs/profile-pic.jpg" alt="Training-manager">
+            </div>
+            <div class="col l9">
+              <li class="name-user">ALEJANDRA RAMIREZ</li>
+              <li class="email-user">alejandraramirez@gmail.com</li>
+            </div>
           </ul>
+        </div>
+        <div class="row list-board">
           <li class="text-uppercase box-nav"><i class="fa fa-book icon-nav" aria-hidden="true"></i> mis cursos</li>
           <li class="text-uppercase box-nav"><i class="fa fa-users icon-nav" aria-hidden="true"></i>cohorts</li>
           <li class="text-uppercase box-nav box-sign-out"><i class="fa fa-sign-out icon-nav" aria-hidden="true"></i> cerrar sesión</li>
-        </ul>
-      </div>
-      <!-- Empieza el contenido de la vista squads-->
-      <div class="col s10">
-        <h5 class="text-track text-uppercase">Front - end</h5>
-        <h3 class="text-sprint">Sprint 2</h3>
-        <h5 class="text-map">Sede Lima</h5>
-        <br>
-        <!-- select sprint -->
-        <select class="browser-default col s3 select-sprint">
-          <option value="" disabled selected>Selecciona sprint</option>
-          <option value="1">Sprint 1</option>
-          <option value="2">Sprint 2</option>
-        </select>
+        </div>
+      </ul>
+    </div>
+    <!-- Empieza el contenido de la vista squads-->
+    <div class="col s12 l9">
+      <div class="row">
+        <div class="col s7 l10">
+          <h5 class="text-track text-uppercase">Front - end</h5>
+        </div>
         <!-- date -->
-        <div class="widget">
-          <div class="date">
-            <p class="day">27</p>
+        <div class="col s5 l2">
+          <div class="date center-align">
+            <p>27</p>
             <p>/</p>
-            <p class="month">03</p>
+            <p>03</p>
             <p>/</p>
-            <p class="year">18</p>
+            <p>2018</p>
           </div>
         </div>
-        <!-- grupo de squads -->
-        <div class="group-squads">
-          <!-- primer grupo -->
-          <div class="squad1"  >
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <div id="sq1" data-box="marco-1" class=" dropheigth" style=" margin:5px ; padding: 5px">
-
-              </div>
-              
-           
-              
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
+      </div>
+      <div class="row">
+        <div class="col s12 l8">
+          <h3 class="text-sprint">Sprint 2</h3>
+          <h5 class="text-map">Sede Lima</h5>
+        </div>
+        <div class="col s12 l4">
+          <div class="right hide-on-small-only">
+            <button id="btn-reorganizar" class="btn waves-effect waves-light #64ffda #1de9b6 teal accent-3 btn-send" name="action">Reorganizar
+            </button>
           </div>
-          <!-- segundo grupo -->
-          <div class="squad1"  >
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <div id="sq2" data-box="marco-2"  class=" dropheigth" style=" margin:5px ; padding: 5px">
-
-              </div>
-             
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
+          <div class="left hide-on-large-only">
+              <button id="btn-reorganizar" class="btn waves-effect waves-light #64ffda #1de9b6 teal accent-3 btn-send" name="action">Reorganizar
+              </button>
           </div>
-          <!-- tercer grupo -->
-          <div class="squad1"  >
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <div id="sq3" data-box="marco-3" class=" dropheigth">
-
-              </div>
+        </div>
+      </div>
       
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
-          </div>
-          <!-- cuarto grupo -->
-          <div class="squad1"  >
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <div id="sq4" data-box="marco-4" class=" dropheigth">
-
-              </div>
-            
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
-          </div><br><br><br>
-          <!-- quinto grupo -->
-          <div class="squad1 "  >
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <div id="sq5" data-box="marco-5" class=" dropheigth" >
-
-              </div>
-         
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
-          </div>-->
-          <!-- sexto grupo -->
-          <!--<div class="squad1">
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <li><span class="name-student">alumna1</span></li>
-              <li><span class="name-student">alumna2</span></li>
-              <li><span class="name-student">alumna3</span></li>
-              <li><span class="name-student">alumna4</span></li>
-              <li><span class="name-student">alumna5</span></li>
-              <li><span class="name-student">alumna6</span></li>
-              <li><span class="name-student">alumna7</span></li>
-              <li><span class="name-student">alumna8</span></li>
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
-          </div>-->
-          <!-- séptimo grupo -->
-          <!--<div class="squad1">
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <li><span class="name-student">alumna1</span></li>
-              <li><span class="name-student">alumna2</span></li>
-              <li><span class="name-student">alumna3</span></li>
-              <li><span class="name-student">alumna4</span></li>
-              <li><span class="name-student">alumna5</span></li>
-              <li><span class="name-student">alumna6</span></li>
-              <li><span class="name-student">alumna7</span></li>
-              <li><span class="name-student">alumna8</span></li>
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
-          </div>-->
-          <!-- octavo grupo -->
-          <!--<div class="squad1">
-            <ul>
-              <div class="name-squad">
-                <li class="squad">Squad: <input class="input-squad" type="text"></li>
-              </div>
-              <br>
-              <li><span class="name-student">alumna1</span></li>
-              <li><span class="name-student">alumna2</span></li>
-              <li><span class="name-student">alumna3</span></li>
-              <li><span class="name-student">alumna4</span></li>
-              <li><span class="name-student">alumna5</span></li>
-              <li><span class="name-student">alumna6</span></li>
-              <li><span class="name-student">alumna7</span></li>
-              <li><span class="name-student">alumna8</span></li>
-              <div class="name-jedi">
-                <li class="jedi">Jedi: <input class="input-jedi" type="text"></li>
-              </div>
-            </ul>
-          </div>-->
-          <!-- fin de número de squads -->
+      <!-- grupo de squads -->
+      <div class="row">
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <div id="sq1" data-box="marco-1" class=" dropheigth" style=" margin:5px ; padding: 5px">
+            </div>
+          </ul>
         </div>
+
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq2" data-box="marco-2"  class=" dropheigth" style=" margin:5px ; padding: 5px">
+            </div>
+          </ul>
+        </div>
+
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq3" data-box="marco-3" class=" dropheigth" style=" margin:5px ; padding: 5px">
+
+            </div>
+          </ul>
+        </div>
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq4" data-box="marco-4" class=" dropheigth" style=" margin:5px ; padding: 5px">
+
+            </div>
+          </ul>
+        </div>
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq5" data-box="marco-5" class=" dropheigth" style=" margin:5px ; padding: 5px">
+
+            </div>
+          </ul>
+        </div>
+
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq6" data-box="marco-6" class=" dropheigth" style=" margin:5px ; padding: 5px">
+
+            </div>
+          </ul>
+        </div>
+
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq7" data-box="marco-5" class=" dropheigth" style=" margin:5px ; padding: 5px">
+
+            </div>
+          </ul>
+        </div>
+
+        <div class="squad1 col l4">
+          <ul>
+            <div class="name-squad">
+              <li class="squad">Squad: <input class="input-squad" type="text"></li>
+            </div>
+            <br>
+            <div id="sq8" data-box="marco-5" class=" dropheigth" style=" margin:5px ; padding: 5px">
+
+            </div>
+          </ul>
+        </div>
+      </div>
+      </div>
+      
+    
+    
+        
+      
+          
+          
+        <!-- fin de número de squads -->
+      </div>
+      <div>
+          <button class="text-uppercase waves-effect waves-light btn amber accent-3 btn-confirm modal-trigger" href="#modal1">confirmar</button>
       </div>
     </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col s3">
-        <button class="text-uppercase waves-effect waves-light btn amber accent-3 btn-confirm modal-trigger" href="#modal1">confirmar</button>
+       
         <!-- Modal Structure -->
         <div id="modal1" class="modal">
           <div class="modal-content text-center">
@@ -244,6 +223,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 <!-- carpeta js -->
 <script src="../js/squads.js"></script>
+
 <script src="../js/app.js"></script>
 </body>
 </html>
