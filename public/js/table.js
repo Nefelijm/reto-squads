@@ -13,7 +13,7 @@ const dbRefObject = firebase.database().ref();
 
 /** ****Table ****/
 
-$("#btnExport").click(function (e) {
+$('#btnExport').click(function(e) {
   window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
   e.preventDefault();
 });
@@ -74,12 +74,11 @@ dbRefObject.on('value', function(snap) {
   memberSquad(colum8, array8, arrayemail8, nameStudents, '#squad8t') ;
   
   arrayemail1.map(element => {
-        var templa = ` <div>${element}<div>`;
-        var templa = ` <div class="center-align">${element}<div>`;
-         console.log(templa);
-         $('.alumna1').append(templa);
-  })
-     
+    var templa = ` <div>${element}<div>`;
+    var templa = ` <div class="center-align">${element}<div>`;
+    console.log(templa);
+    $('.alumna1').append(templa);
+  });
 });
 
 $('#gmail').on('click', function() {
