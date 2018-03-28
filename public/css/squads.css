@@ -82,6 +82,7 @@
 
 .list-board {
   padding-left: 1em;
+  cursor: pointer;
 }
 #toHome {
   cursor: pointer;
