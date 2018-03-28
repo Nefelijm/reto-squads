@@ -73,8 +73,13 @@ dbRefObject.on('value', function(snap) {
   memberSquad(colum7, array7, arrayemail7, nameStudents, '#squad7t') ;
   memberSquad(colum8, array8, arrayemail8, nameStudents, '#squad8t') ;
   
-  // var template = `<input>${element.email}`;
-  // $(dom).append(template);
+  arrayemail1.map(element => {
+        var templa = ` <div>${element}<div>`;
+        var templa = ` <div class="center-align">${element}<div>`;
+         console.log(templa);
+         $('.alumna1').append(templa);
+  })
+     
 });
 
 $('#gmail').on('click', function() {
