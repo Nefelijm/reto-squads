@@ -7,7 +7,7 @@ var config = {
   messagingSenderId: '936978345317'
 };
 firebase.initializeApp(config);
-const dbRefObject = firebase.database().ref();
+
 
 // Ingresar con google
 var $btn = $('#btnGoogle');
@@ -21,6 +21,7 @@ function signInGoogle() {
     $user = result.user;
     // ...
     console.log($user);
+    window.location.href = '../views/home.html';
   });
 }
 // Ingresar con correo y contraseña
@@ -46,7 +47,7 @@ function signInEmail() {
 
 
 /** **Funcionalidad de Squas */
-
+const dbRefObject = firebase.database().ref();
 
 organizar();
 var newSq1;
@@ -65,6 +66,8 @@ var validate3 = true;
 function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
+    // console.log(snap.val());
+
     // STUDENTS
    
     var sq1 = [];
@@ -182,6 +185,10 @@ function organizar() {
     newSq5 = newSquad(sq5);
 
     // console.log(newSq1, newSq2, newSq3, newSq4);
+    newSq6 = newSquad(sq6);
+    newSq7 = newSquad(sq7);
+    newSq8 = newSquad(sq8);
+    // newSq9 = newSquad(sq9);
 
 
     function obtenerSprint() {
@@ -439,9 +446,75 @@ function drop(event) {
   // squad.push(newSq4);
   // localStorage.setItem('squadFinal', squad);
 
+  if (event.target.dataset.box === 'marco-6') {
+    searchSquad(newSq1, idName);
+    searchSquad(newSq3, idName);
+    searchSquad(newSq4, idName);
+    searchSquad(newSq5, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq8, idName);
+    searchSquad(newSq2, idName);
+    newSq6.push(idName);
+    console.log(newSq6);
+    Validation1(newSq1);
+    Validation1(newSq2);
+    Validation1(newSq3);
+    Validation1(newSq4);
+    Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
+    Validation2(idName, newSq6);
+    Validation3(idName, newSq6);
+    event.target.appendChild(document.getElementById(idName));
+  }
+  if (event.target.dataset.box === 'marco-7') {
+    searchSquad(newSq1, idName);
+    searchSquad(newSq3, idName);
+    searchSquad(newSq4, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq5, idName);
+    searchSquad(newSq8, idName);
+    searchSquad(newSq2, idName);
+    newSq7.push(idName);
+    console.log(newSq7);
+    Validation1(newSq1);
+    Validation1(newSq2);
+    Validation1(newSq3);
+    Validation1(newSq4);
+    Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
+    Validation2(idName, newSq7);
+    Validation3(idName, newSq7);
+    event.target.appendChild(document.getElementById(idName));
+  }
+  if (event.target.dataset.box === 'marco-8') {
+    searchSquad(newSq1, idName);
+    searchSquad(newSq3, idName);
+    searchSquad(newSq4, idName);
+    searchSquad(newSq6, idName);
+    searchSquad(newSq7, idName);
+    searchSquad(newSq5, idName);
+    searchSquad(newSq2, idName);
+    newSq8.push(idName);
+    console.log(newSq8);
+    Validation1(newSq1);
+    Validation1(newSq2);
+    Validation1(newSq3);
+    Validation1(newSq4);
+    Validation1(newSq5);
+    Validation1(newSq6);
+    Validation1(newSq7);
+    Validation1(newSq8);
+    Validation2(idName, newSq8);
+    Validation3(idName, newSq8);
+    event.target.appendChild(document.getElementById(idName));
+  }
+
  
   Warming();
-  
 }
 
 
@@ -602,6 +675,15 @@ var array7 = [];
 var array8 = [];
 
 
+//
+var arrayemail1 = [];
+var arrayemail2 = [];
+var arrayemail3 = [];
+var arrayemail4 = [];
+var arrayemail5 = [];
+var arrayemail6 = [];
+var arrayemail7 = [];
+var arrayemail8 = [];
 
 dbRefObject.on('value', function(snap) {
  
@@ -626,14 +708,31 @@ dbRefObject.on('value', function(snap) {
   memberSquad(colum8, array8, nameStudents, '#squad8t') ;
 
 
+  memberSquad(colum2, array2, arrayemail1, nameStudents, '#squad2t') ;
+  memberSquad(colum3, array3, arrayemail2, nameStudents, '#squad3t') ;
+  memberSquad(colum4, array4, arrayemail3, nameStudents, '#squad4t') ;
+  memberSquad(colum5, array5, arrayemail4, nameStudents, '#squad5t') ;
+  memberSquad(colum6, array6, arrayemail5, nameStudents, '#squad6t') ;
+  memberSquad(colum7, array7, arrayemail6, nameStudents, '#squad7t') ;
+  memberSquad(colum8, array8, arrayemail7, nameStudents, '#squad8t') ;
+  console.log(arrayemail1);
+  // var template = `<input>${element.email}`;
+  // $(dom).append(template);
+ 
+
 });
 
+$('#gmail').on('click', function(){
+  window.location.href = '../views/email.html';
+})
 
-function memberSquad(squad, array, arrayTotal, dom) {
+function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
   for (p = 0; p < squad.length;p++) {
     for (q = 0; q < arrayTotal.length ; q++) {
       if (squad[p] === arrayTotal[q].index) {
         array.push(arrayTotal[q].name);   
+        array.push(arrayTotal[q].name);
+        arrayemail.push(arrayTotal[q].email);
       }
     }
   }
