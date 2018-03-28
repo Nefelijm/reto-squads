@@ -46,7 +46,29 @@ function signInEmail() {
 // $(document).ready(function() {
 //   M.updateTextFields();
 // });
+/* --------------renderizado------------- */
+var frontEnd = $('#front-end');
 
+frontEnd.on('click', function() {
+  window.location.href = '../views/squads.html';
+});
+
+var cohorts = $('#toHome');
+
+cohorts.on('click', toHome);
+
+function toHome() {
+  window.location.href = '../views/home.html';
+}
+
+/* ------------fecha -----------------*/
+var dateObj = new Date();
+var dateDay = dateObj.getDate();
+var dateMonth = dateObj.getMonth();
+var dateYear = dateObj.getFullYear();
+console.log(dateDay);
+
+$('#fecha').html(`${dateDay}/${dateMonth}/${dateYear}`) 
 
 /** **Funcionalidad de Squas */
 const dbRefObject = firebase.database().ref();
