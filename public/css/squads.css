@@ -25,9 +25,9 @@
   display: flex;
   flex-flow: row;
   top: 20%;
-  border: 1px solid gray;
-  border-radius: 0.6vh;
-  background-color: lightgray;
+  border: 3px solid #ea349b;
+  border-radius: 10px;
+ text-align: center;
   padding: 0.8vh 2vh;
   left: 33% !important;
   top: 25%;
