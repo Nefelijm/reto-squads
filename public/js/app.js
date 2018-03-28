@@ -67,7 +67,7 @@ function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
     // console.log(snap.val());
-
+    var students = snap.val();
     // STUDENTS
    
     var sq1 = [];
@@ -684,7 +684,7 @@ var arrayemail7 = [];
 var arrayemail8 = [];
 
 dbRefObject.on('value', function(snap) {
-  console.log(nameStudents);
+  var nameStudents = snap.val();
 
   var colum1 = [squad1t[0], squad2t[0], squad3t[0], squad4t[0], squad5t[0], squad6t[0], squad7t[0], squad8t[0]];
   var colum2 = [squad1t[1], squad2t[1], squad3t[1], squad4t[1], squad5t[1], squad6t[1], squad7t[1], squad8t[1]];
