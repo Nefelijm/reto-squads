@@ -2,7 +2,9 @@
 ----------
 Herramienta de distribución de squads que facilita su gestión a las Training Managers.
 
-## Elaborado para:
+![image](https://user-images.githubusercontent.com/32296818/38038563-d9c320d8-3270-11e8-9f4e-5a6dfc514eda.png)
+
+## Elaborado para
 
 [Laboratoria](http://convocatoria.laboratoria.la/)
 
@@ -94,7 +96,6 @@ De lo anterior se establecieron las características prioritarias de la herramie
 - La TM podrá mover una estudiante a otro squad
 - Al hacer cambios en los squads la herramienta hará la verificación y de ser el caso mostrará warnings
 - Mientras hayan warnings no se podrán confirmar los squads
-- La TM podrá ingresar los nombres de Jedis por cada squad
 - Al confirmar la TM los squads se enviará un email a cada estudiante.
 
 ## Prototyping / Testing
@@ -109,11 +110,11 @@ Se realizó el testing del diseño de la herramienta en html/css con la cliente,
 
 [Paper prototyping & testing](https://photos.app.goo.gl/VOtcEailzeulYSj23)
 
-## Conclusiones
+## Conclusión
 
-La herramienta cumple con los feature lists priorizados y, adicionalmente se logró implementar:
+La herramienta cumple con los feature list priorizados y, adicionalmente se logró implementar:
 
-- La vista de impresión y exportación a excel de los squads conformados.
+ -  Exportación a excel de los squads conformados e impresión de los mismos.
 
 ## Elaborado por
 
@@ -127,7 +128,3 @@ La herramienta cumple con los feature lists priorizados y, adicionalmente se log
 
 - [Darcy Cervera](https://github.com/darcycervh)
 - [Yasmin Mattos](https://github.com/YasminMattos)
-
-
-
-
