@@ -6,8 +6,8 @@ var config = {
   storageBucket: 'squadsdist.appspot.com',
   messagingSenderId: '936978345317'
 };
-firebase.initializeApp(config);
 
+firebase.initializeApp(config);
 
 // Ingresar con google
 var $btn = $('#btnGoogle');
@@ -695,15 +695,6 @@ dbRefObject.on('value', function(snap) {
   var colum7 = [squad1t[6], squad2t[6], squad3t[6], squad4t[6], squad5t[6], squad6t[6], squad7t[6], squad8t[6]];
   var colum8 = [squad1t[7], squad2t[7], squad3t[7], squad4t[7], squad5t[7], squad6t[7], squad7t[7], squad8t[7]];
 
-  memberSquad(colum1, array1, nameStudents, '#squad1t') ;
-  memberSquad(colum2, array2, nameStudents, '#squad2t') ;
-  memberSquad(colum3, array3, nameStudents, '#squad3t') ;
-  memberSquad(colum4, array4, nameStudents, '#squad4t') ;
-  memberSquad(colum5, array5, nameStudents, '#squad5t') ;
-  memberSquad(colum6, array6, nameStudents, '#squad6t') ;
-  memberSquad(colum7, array7, nameStudents, '#squad7t') ;
-  memberSquad(colum8, array8, nameStudents, '#squad8t') ;
-
 
   memberSquad(colum2, array2, arrayemail1, nameStudents, '#squad2t') ;
   memberSquad(colum3, array3, arrayemail2, nameStudents, '#squad3t') ;
@@ -726,7 +717,6 @@ function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
     for (q = 0; q < arrayTotal.length ; q++) {
       if (squad[p] === arrayTotal[q].index) {
         array.push(arrayTotal[q].name);   
-        
         arrayemail.push(arrayTotal[q].email);
       }
     }
