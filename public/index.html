@@ -6,38 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
   <title>Document</title>
+  <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="box container-fluid">
-    <div class="row">
-      <div class="input-field col s10 m3">
-        <input id="email" type="text" class="validate">
-        <label class="active" for="first_name2">Correo Electrónico</label>
-      </div>
-    </div>
-    <div class="row">
-      <div class="input-field col s10 m3">
-        <input id="password" type="password" class="validate">
-        <label class="active" for="first_name2">Contraseña</label>
-      </div>
-    </div>
-    <div class="row">
-    <a id="btnCorreo" class="waves-effect waves-light btn col m1 offset-m1">enviar</a>
-    </div>
-
-    <div class="row">
-    <p class="col m1 offset-m1">También puedes</p>
-    </div>
-    <div class="row">
-    <a id="btnGoogle" class="waves-effect waves-light btn col m3">ingresar con google</a>
+  <!-- arrow color: crimson -->
+  <div class="arrow2">
+    <img src="assets/images/arrow2.png" class="arrow2" alt="">
+  </div>
+  <div class="box container box-sign-up">
+  <div class="row">
+    <img src="assets/images/logo-nuevo-lab.png" class="logo-laboratoria center" alt="">
+    <div class="input-field m3 email-box">
+      <input id="email" type="text" class="validate">
+      <label class="active" for="first_name2">Correo Electrónico</label>
     </div>
   </div>
-
-  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-  <script src="js/app.js"></script>
+  <div class="row">
+    <div class="input-field col s10 m3 password-box">
+      <input id="password" type="password" class="validate">
+      <label class="active" for="first_name2">Contraseña</label>
+    </div>
+  </div>
+  <div class="row center">
+  <a id="btnCorreo" class="waves-effect waves-orange btn col m1 offset-m1 btn-send center">iniciar sesión</a>
+  </div>
+  <div class="row text-signup-google">
+  <p class="">También puedes</p>
+  </div>
+  <div class="row">
+  <a id="btnGoogle" class="waves-effect waves-light btn col m3 btn-google">ingresar con google</a>
+  </div>
+</div>
+<!-- arrow color: crimson -->
+<div class="arrow3">
+  <img src="assets/images/arrow3.png" class="arrow3" alt="">
+</div>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
