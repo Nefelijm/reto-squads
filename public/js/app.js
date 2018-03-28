@@ -702,7 +702,7 @@ dbRefObject.on('value', function(snap) {
   // $(dom).append(template);
 
   arrayemail1.map(element => {
-    var templa = ` <div>${element}<div>`;
+    var templa = ` <div class="center-align">${element}<div>`;
     console.log(templa);
     $('.alumna1').append(templa);
 
