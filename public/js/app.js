@@ -726,7 +726,7 @@ function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
     for (q = 0; q < arrayTotal.length ; q++) {
       if (squad[p] === arrayTotal[q].index) {
         array.push(arrayTotal[q].name);   
-        array.push(arrayTotal[q].name);
+        
         arrayemail.push(arrayTotal[q].email);
       }
     }
