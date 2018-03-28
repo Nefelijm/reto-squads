@@ -67,7 +67,11 @@ function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
     // console.log(snap.val());
+<<<<<<< HEAD
      students = snap.val();
+=======
+    var students = snap.val();
+>>>>>>> d48de6cdb4ebda35cf2ed6eb413c6ad5b0348e40
     // STUDENTS
    
     var sq1 = [];
@@ -518,8 +522,6 @@ function drop(event) {
 }
 
 
-
-
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
   if (squad.length < 6) {
@@ -686,8 +688,12 @@ var arrayemail7 = [];
 var arrayemail8 = [];
 
 dbRefObject.on('value', function(snap) {
+<<<<<<< HEAD
    nameStudents = snap.val();
   // console.log(nameStudents);
+=======
+  var nameStudents = snap.val();
+>>>>>>> d48de6cdb4ebda35cf2ed6eb413c6ad5b0348e40
 
   var colum1 = [squad1t[0], squad2t[0], squad3t[0], squad4t[0], squad5t[0], squad6t[0], squad7t[0], squad8t[0]];
   var colum2 = [squad1t[1], squad2t[1], squad3t[1], squad4t[1], squad5t[1], squad6t[1], squad7t[1], squad8t[1]];
@@ -709,6 +715,7 @@ dbRefObject.on('value', function(snap) {
   console.log(arrayemail1);
   // var template = `<input>${element.email}`;
   // $(dom).append(template);
+<<<<<<< HEAD
 
   arrayemail1.map(element => {
     var templa = `<input  name="email" value="${element}" />`;
@@ -719,11 +726,13 @@ dbRefObject.on('value', function(snap) {
   });
  
 
+=======
+>>>>>>> d48de6cdb4ebda35cf2ed6eb413c6ad5b0348e40
 });
 
-$('#gmail').on('click', function(){
+$('#gmail').on('click', function() {
   window.location.href = '../views/email.html';
-})
+});
 
 function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
   for (p = 0; p < squad.length;p++) {

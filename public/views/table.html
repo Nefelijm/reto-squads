@@ -16,15 +16,16 @@
    <!-- carpeta css -->
    <link rel="stylesheet" href="../css/squads.css">
 </head>
-<body>
-  <div class="center-align">
-      <button class="btn" type="button" id="btnExport" >Exportar Excel</button>
-      <button class="btn "  onClick= window.print()>Imprimir</button>
-  </div>
+<body class="bg-fondo">
+    <div class="center-align m-3">
+      
+        <img src="../assets/images/logo.png" alt="logo">
+    </div>
+ 
   
   
   <div id="dvData" class="container">
-      <table class="striped">
+      <table class="striped responsive-table">
           <tr>
               <th>Squad 1</th>
               <th>Squad 2</th>
@@ -62,8 +63,11 @@
           
       </table>
   </div>
-  <div id="gmail" class="center-align ">
-      <button>ENVIAR CORREO</button>
+
+  <div  class="center-align m-3">
+        <button class="btn btn-send #ffff00 yellow accent-2" type="button" id="btnExport" >Exportar Excel</button>
+        <button class="btn btn-send #ffff00 yellow accent-2"  onClick= window.print()>Imprimir</button>
+      <button class="btn btn-send #ffff00 yellow accent-2" id="gmail">ENVIAR CORREO</button>
   </div>
 
 
