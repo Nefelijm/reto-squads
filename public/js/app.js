@@ -613,12 +613,10 @@ function Validation3(element, squad) {
 }
 
 
-//bloqueado al guardar  
-$('#btn-guardar').on('click', function () {
+// bloqueado al guardar  
+$('#btn-guardar').on('click', function() {
   $('.bloqueado').attr('draggable', false);
   $('.container-images').addClass('plomo');
-
-
 });
 
 // encontrar el squad y borrar el elemento

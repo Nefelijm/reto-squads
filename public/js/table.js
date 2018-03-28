@@ -53,7 +53,7 @@ var arrayemail8 = [];
 
 dbRefObject.on('value', function(snap) {
   var nameStudents = snap.val();
-console.log(nameStudents);
+  console.log(nameStudents);
   var colum1 = [squad1t[0], squad2t[0], squad3t[0], squad4t[0], squad5t[0], squad6t[0], squad7t[0], squad8t[0]];
   var colum2 = [squad1t[1], squad2t[1], squad3t[1], squad4t[1], squad5t[1], squad6t[1], squad7t[1], squad8t[1]];
   var colum3 = [squad1t[2], squad2t[2], squad3t[2], squad4t[2], squad5t[2], squad6t[2], squad7t[2], squad8t[2]];
@@ -64,7 +64,7 @@ console.log(nameStudents);
   var colum8 = [squad1t[7], squad2t[7], squad3t[7], squad4t[7], squad5t[7], squad6t[7], squad7t[7], squad8t[7]];
 
   console.log(colum1);
-  memberSquad(colum1, array1, arrayemail1, nameStudents, '#squad2t') ;
+  memberSquad(colum1, array1, arrayemail1, nameStudents, '#squad1t') ;
   memberSquad(colum2, array2, arrayemail2, nameStudents, '#squad2t') ;
   memberSquad(colum3, array3, arrayemail3, nameStudents, '#squad3t') ;
   memberSquad(colum4, array4, arrayemail4, nameStudents, '#squad4t') ;
