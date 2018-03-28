@@ -706,13 +706,11 @@ dbRefObject.on('value', function(snap) {
   console.log(arrayemail1);
   // var template = `<input>${element.email}`;
   // $(dom).append(template);
- 
-
 });
 
-$('#gmail').on('click', function(){
+$('#gmail').on('click', function() {
   window.location.href = '../views/email.html';
-})
+});
 
 function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
   for (p = 0; p < squad.length;p++) {
