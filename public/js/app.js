@@ -6,8 +6,8 @@ var config = {
   storageBucket: 'squadsdist.appspot.com',
   messagingSenderId: '936978345317'
 };
-firebase.initializeApp(config);
 
+firebase.initializeApp(config);
 
 // Ingresar con google
 var $btn = $('#btnGoogle');
@@ -67,7 +67,7 @@ function organizar() {
   // sincronizar cambios
   dbRefObject.on('value', function(snap) {
     // console.log(snap.val());
-
+     students = snap.val();
     // STUDENTS
    
     var sq1 = [];
@@ -686,8 +686,8 @@ var arrayemail7 = [];
 var arrayemail8 = [];
 
 dbRefObject.on('value', function(snap) {
- 
-  console.log(nameStudents);
+   nameStudents = snap.val();
+  // console.log(nameStudents);
 
   var colum1 = [squad1t[0], squad2t[0], squad3t[0], squad4t[0], squad5t[0], squad6t[0], squad7t[0], squad8t[0]];
   var colum2 = [squad1t[1], squad2t[1], squad3t[1], squad4t[1], squad5t[1], squad6t[1], squad7t[1], squad8t[1]];
@@ -697,15 +697,6 @@ dbRefObject.on('value', function(snap) {
   var colum6 = [squad1t[5], squad2t[5], squad3t[5], squad4t[5], squad5t[5], squad6t[5], squad7t[5], squad8t[5]];
   var colum7 = [squad1t[6], squad2t[6], squad3t[6], squad4t[6], squad5t[6], squad6t[6], squad7t[6], squad8t[6]];
   var colum8 = [squad1t[7], squad2t[7], squad3t[7], squad4t[7], squad5t[7], squad6t[7], squad7t[7], squad8t[7]];
-
-  memberSquad(colum1, array1, nameStudents, '#squad1t') ;
-  memberSquad(colum2, array2, nameStudents, '#squad2t') ;
-  memberSquad(colum3, array3, nameStudents, '#squad3t') ;
-  memberSquad(colum4, array4, nameStudents, '#squad4t') ;
-  memberSquad(colum5, array5, nameStudents, '#squad5t') ;
-  memberSquad(colum6, array6, nameStudents, '#squad6t') ;
-  memberSquad(colum7, array7, nameStudents, '#squad7t') ;
-  memberSquad(colum8, array8, nameStudents, '#squad8t') ;
 
 
   memberSquad(colum2, array2, arrayemail1, nameStudents, '#squad2t') ;
@@ -718,6 +709,14 @@ dbRefObject.on('value', function(snap) {
   console.log(arrayemail1);
   // var template = `<input>${element.email}`;
   // $(dom).append(template);
+
+  arrayemail1.map(element => {
+    var templa = `<input  name="email" value="${element}" />`;
+    console.log(templa);
+    $('.alumna1').append(templa);
+
+
+  });
  
 
 });
@@ -731,7 +730,6 @@ function memberSquad(squad, array, arrayemail, arrayTotal, dom) {
     for (q = 0; q < arrayTotal.length ; q++) {
       if (squad[p] === arrayTotal[q].index) {
         array.push(arrayTotal[q].name);   
-        array.push(arrayTotal[q].name);
         arrayemail.push(arrayTotal[q].email);
       }
     }
