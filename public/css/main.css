@@ -51,6 +51,21 @@ body {
   position: relative;
   padding-bottom: 1em;
 }
+.btn-send, .btn-google {
+  font-weight: bold;
+}
+.btn-send{
+  background-color: #ffc107;
+}
+.btn-send:hover{
+  background-color: #cc9d0f;
+}
+.btn-google{
+  background-color: #ea4335;
+}
+.btn-google:hover{
+  background-color: #a02017;
+}
 @media (min-width:400px){
   .box-sign-up{
     width: 80%;
