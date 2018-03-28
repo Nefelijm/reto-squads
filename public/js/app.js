@@ -1,3 +1,5 @@
+// import { watchFile } from "fs";
+
 var config = {
   apiKey: 'AIzaSyAAtrPpz9IUt-U-OITqwN1Bj6eGFegAwnE',
   authDomain: 'squadsdist.firebaseapp.com',
@@ -512,18 +514,14 @@ function drop(event) {
     Validation3(idName, newSq8);
     event.target.appendChild(document.getElementById(idName));
   }
-
- 
-  Warming();
 }
 
 
 // validación1 : número de integrantes de squad
 function Validation1(squad) {
-  if (squad.length < 6) {
+  if (squad.length < 8) {
     alert('El número de personas del squad es 7');
     validate1 = false;
-    console.log(validate1);
   }
 }
 
@@ -556,16 +554,16 @@ function Validation2(element, squad) {
     // Borrando el elemento 
 
     searchSquad(newArr, indexStudent);
-
+    var box2 = document.getElementById('warming2');
     // Comparar los integrantes del nuevo squad con la lista de compañeras
     for (k = 0; k < newArr.length; k++) {
       for (j = 0; j < squad.length; j++) {
         if (newArr[k] === squad[j]) {
-          alert('ya estuvieron juntas ' + squad[j]);
+          var template = `<div class="notice warning">Estuvieron juntas : ${student[newArr[k]].name.first}  y  ${studentSelect.name.first}<a class="closebtn" onclick="this.parentElement.style.display='none';">&times;</a> </div>`;
+       
+          box2.innerHTML += template;
           validate2 = false;
-        } else {
-          validate2 = true;
-        }
+        } 
       }
     }
 
@@ -605,11 +603,9 @@ function Validation3(element, squad) {
     }
 
     if (englishAdvance.length > 2) {
-      alert('Hay más de 2 estudiantes con nivel de inglés mayor de 3');
       validate3 = false;
-    } else {
-      validate3 = true;
-    }
+      Warming();
+    } 
   });
 }
 
@@ -635,17 +631,15 @@ function searchSquad(squad, id) {
 function Warming() {
   var box = document.getElementById('warming');
 
-  var message1 = '<div>Advertencia Validacion 1</div>';
-  var message2 = '<div>Advertencia Validacion 2</div>';
-  var message3 = '<div>Advertencia Validacion 3</div>';
+  var message3 = '<div class="notice warning">Hay más de 2 estudiantes con nivel de inglés mayor de 3 <a class="closebtn" onclick="this.parentElement.style.display=\'none\';">&times;</a> </div>';
 
-  if (!validate1) {
-    box.innerHTML += message1;
+  if (!validate3) {
+    box.innerHTML += message3;
   }
 }
 
 
-/** ****Table */
+/** ****Table ****/
 
 $('#btnExport').click(function(event) {
   window.open('data:application/vnd.ms-excel,' + $('#dvData').html());
@@ -714,7 +708,6 @@ dbRefObject.on('value', function(snap) {
 
 
   });
- 
 
 });
 

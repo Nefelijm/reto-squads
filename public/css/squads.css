@@ -38,67 +38,40 @@
   border: 1px solid black;
 }
 
-.squad1{
-  height: auto;
+.squad1 {
+  box-sizing: border-box;
   background-color: #e2e4e6;
   border: 1px solid #000;
   border-radius: 0.6vh;
   text-align: center;
-  display: inline-block;
+  margin-bottom: 3.5em;
+  padding: 0 0 2em 0;
 }
 
 .name-squad {
   background-color: #ea349b;
   box-sizing: border-box;
-  border-top-left-radius: 0.6vh;
-  border-top-right-radius: 0.6vh;
+  padding: 0.7em;
+  font-size: 18px;
 }
 
-.name-student{
+.name-student {
   width: 80%;
-  height: 2%;
   display: inline-block;
-  line-height: 1.7em;
-  margin: 0.3em 0em;
+  margin: 0.4em 0em;
   border-radius: 0.9vh;
   text-align: center;
   background: #fff;
-  border: 1px solid lightgray;
-}
-
-.name-jedi {
-  background-color: #87f4a3;
   box-sizing: border-box;
-  border-bottom-left-radius: 0.6vh;
-  border-bottom-right-radius: 0.6vh;
+  border: 1px solid lightgray;
+  padding: 0.7em 0;
 }
 
-
-.squad {
-  padding-right: 2vh !important;
-  padding-left: 3vh;
-  text-align: left;
-}
-
-.input-squad,
-.input-jedi {
-  width: 20vh !important;
-  height: 4vh !important;
-  display: inline-block;
-}
-
-
-.btn-confirm{
-  position: absolute;
-  margin-bottom: 5vh !important;
-  right: 10% !important;
-}
-
-.text-center{
+.text-center {
   text-align: center;
 }
 
-.btn-center{
+.btn-center {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -148,4 +121,150 @@ th {
   background-image: url('../assets/images/fondo.png');
   background-size: cover;
   background-position: center;
+}
+
+
+/*alerts*/
+div.alert-message {
+	display: block;
+	padding: 13px 12px 12px;
+	font-weight: bold;
+	font-size: 14px;
+	color: white;
+	background-color: #2ba6cb;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-bottom: 12px;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	border-radius: 3px;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+	position: relative;
+}
+div.alert-message .box-icon {
+	display: block;
+	float: left;
+	background-image: url('icon.png');
+	width: 30px;
+	height: 25px;
+	margin-top: -2px;
+	background-position: -8px -8px;
+}
+div.alert-message p {
+	margin: 0px;
+}
+div.alert-message.success {
+	background-color: #5da423;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+div.alert-message.success .box-icon {
+	background-position: -48px -8px;
+}
+div.alert-message.warning {
+	background-color: #e3b000;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+div.alert-message.warning .box-icon {
+	background-position: -88px -8px;
+}
+div.alert-message.error {
+	background-color: #c60f13;
+	color: #fff;
+	text-shadow: 0 -1px rgba(0, 0, 0, 0.3);
+}
+div.alert-message.error .box-icon {
+	background-position: -128px -8px;
+}
+div.alert-message a.close {
+	color: #333;
+	position: absolute;
+	right: 4px;
+	top: -1px;
+	font-size: 17px;
+	opacity: 0.2;
+	padding: 4px;
+}
+div.alert-message a.close:hover, div.alert-box a.close:focus {
+	opacity: 0.4;
+}
+          
+
+.notice {
+  position: relative;
+  margin: 1em;
+  background: #F9F9F9;
+  padding: 1em 1em 1em 2em;
+  border-left: 4px solid #DDD;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125);
+}
+
+.notice:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -17px;
+  left: -17px;
+  background-color: #DDD;
+  color: #FFF;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-family: Georgia;
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.info {
+  border-color: #0074D9;
+}
+
+.info:before {
+  content: "i";
+  background-color: #0074D9;
+}
+
+.success {
+  border-color: #2ECC40;
+}
+
+.success:before {
+  content: "√";
+  background-color: #2ECC40;
+}
+
+.warning {
+  border-color: #FFDC00;
+}
+
+.warning:before {
+  content: "!";
+  background-color: #FFDC00;
+}
+
+.error {
+  border-color: #FF4136;
+}
+
+.error:before {
+  content: "X";
+  background-color: #FF4136;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: rgb(189, 171, 12);
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
 }

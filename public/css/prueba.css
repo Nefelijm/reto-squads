@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffc107;
+  }
+  
+  .box-sign-up {
+    background-color: #ffff;
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 2em;
+    border-radius: 1vh;
+    box-shadow: 1px 1px 3px;
+  }
+  .logo-laboratoria {
+    width: 70%;
+    height: 40%;
+    margin-bottom: 1.4em !important;
+    margin: auto;
+    display: flex;
+  }
+  .email-box, .password-box{
+    width: 100% !important;
+    margin: 0;
+  }
+  .btn-send{
+    background-color: #ffc107;
+  }
+  .btn-send:hover{
+    background-color: #cc9d0f;
+  }
+  .btn-send, .btn-google {
+    width: 45vh !important;
+    margin: auto;
+    color: #fff;
+    font-weight: bold;
+  }
+  .btn-google:hover{
+    background-color: #a02017;
+  }
+  .text-signup-google{
+    width: 33% !important;
+    display: flex !important;
+    flex-flow: row;
+    line-height: 0.6em !important;
+  }
+  
+  .btn-google {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    left: 0vh !important;
+    right: 0vh !important;
+    margin-bottom: 2em;
+    background-color: #ea4335;
+  }
+  
+  /* arrows */
+  
+  .arrow2, .arrow3{
+    position: absolute;
+    width: 40%;
+    height: 40%;
+  }
+  .arrow2{
+    top: 1em;
+    left: 1em;
+  }
+  .arrow3{
+    bottom: 1em;
+    right: 1em;
+    margin-right: 0;
+  }
+  @media (min-width: 360px){
+    .arrow2, .arrow3{
+      width: 50%;
+      height: 30%;
+    }
+    .box-sign-up{
+      width: 80%;
+      height: 60%;
+    }
+    .btn-send, .btn-google{
+      width: 40vh !important;
+    }
+    .btn-send{
+      margin-left: -1em;
+    }
+    .text-signup-google{
+      width: 90vh !important;
+      display: flex;
+    }
+  }

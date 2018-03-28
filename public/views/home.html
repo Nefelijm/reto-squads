@@ -15,38 +15,53 @@
   <link rel="stylesheet" href="../css/home.css">  
 </head>
 <body>
-  <section class="container-fluid">
+  <section>
     <div class="row">
       <!-- logo laboratoria -->
-      <div class="col s2 white box-logo-lab">
-        <img class="image-logo responsive-img" src="../assets/images/logo-lab.png" alt="Logo - Laboratoria">
+      <div class="col l3 hide-on-med-and-down white box-logo-lab">
+        <img class="image-logo responsive-img" src="../assets/docs/logo-nuevo-lab.png" alt="Logo - Laboratoria">
       </div>
       <!-- nav color de laboratoria -->
-      <div class="col s10 color-lab">
+      <div class="col s12 l9 color-lab">
       </div>
     </div>
   </section>
   <!-- -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col s2 white div-box-nav">
-        <ul>
+  <div class="row">
+    <div class="col l3 hide-on-med-and-down white div-box-nav">
+      <ul>
+        <div class="row">
           <ul class="user-box">
-            <li class="name-user"><img class="responsive-img circle" src="../assets/docs/profile-pic.jpg" alt="Training-manager">Alejandra Ramirez</li>
-            <li class="email-user">alejandraramirez@gmail.com</li>
+            <div class="col l3">
+              <img class="responsive-img circle" src="../assets/docs/profile-pic.jpg" alt="Training-manager">
+            </div>
+            <div class="col l9">
+              <li class="name-user">ALEJANDRA RAMIREZ</li>
+              <li class="email-user">alejandraramirez@gmail.com</li>
+            </div>
           </ul>
+        </div>
+        <div class="row list-board">
           <li class="text-uppercase box-nav"><i class="fa fa-book icon-nav" aria-hidden="true"></i> mis cursos</li>
           <li class="text-uppercase box-nav"><i class="fa fa-users icon-nav" aria-hidden="true"></i>cohorts</li>
           <li class="text-uppercase box-nav box-sign-out"><i class="fa fa-sign-out icon-nav" aria-hidden="true"></i> cerrar sesión</li>
-        </ul>
+        </div>
+      </ul>
+    </div>
+    <!-- Empieza el contenido de cohorts-->
+    <div class="col s12 l9">
+      <div class="row">
+        <div class="col s12 l12">
+          <h3 class="text-title">Especializaciones</h3>
+        </div>
       </div>
-      <!---->
-      <div class="col s10">
-        <h3 class="text-title">Especializaciones</h3>
-        <ul>
-          <li class="course-box text-uppercase text-course">front-end</li>
-          <li class="course-box text-uppercase text-course">UX-Design</li>
-        </ul>
+      <div class="row">
+        <div class="col s12 l5">
+          <ul>
+            <li class="course-box text-uppercase text-course">front-end</li>
+            <li class="course-box text-uppercase text-course">UX-Design</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>

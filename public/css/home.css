@@ -87,13 +87,11 @@
 
 .course-box{
   height: 6em;
-  width: 25em;
   line-height: 5em;
   box-sizing: border-box;
   background-color: #fff;
   box-shadow: 1px 1px 2px;
   margin-bottom: 1em;
-  position: relative;
   left: 1.5em;
   top: 2em;
   cursor: pointer;
