@@ -74,11 +74,51 @@ dbRefObject.on('value', function(snap) {
   memberSquad(colum8, array8, arrayemail8, nameStudents, '#squad8t') ;
   
   arrayemail1.map(element => {
-    var templa = ` <div>${element}<div>`;
+    
+        var templa = ` <div class="center-align">${element}<div>`;
+         console.log(templa);
+         $('.alumna1').append(templa);
+  })
+
+  arrayemail2.map(element => {
+
     var templa = ` <div class="center-align">${element}<div>`;
-    console.log(templa);
-    $('.alumna1').append(templa);
-  });
+     console.log(templa);
+     $('.alumna2').append(templa);
+})
+
+arrayemail3.map(element => {
+  var templa = ` <div class="center-align">${element}<div>`;
+   console.log(templa);
+   $('.alumna3').append(templa);
+})
+
+arrayemail4.map(element => {
+  var templa = ` <div class="center-align">${element}<div>`;
+   console.log(templa);
+   $('.alumna4').append(templa);
+})
+arrayemail5.map(element => {
+  var templa = ` <div class="center-align">${element}<div>`;
+   console.log(templa);
+   $('.alumna5').append(templa);
+})
+arrayemail6.map(element => {
+  var templa = ` <div class="center-align">${element}<div>`;
+   console.log(templa);
+   $('.alumna6').append(templa);
+})
+arrayemail7.map(element => {
+  var templa = ` <div class="center-align">${element}<div>`;
+   console.log(templa);
+   $('.alumna7').append(templa);
+})
+arrayemail8.map(element => {
+  var templa = ` <div class="center-align">${element}<div>`;
+   console.log(templa);
+   $('.alumna8').append(templa);
+})
+     
 });
 
 $('#gmail').on('click', function() {
