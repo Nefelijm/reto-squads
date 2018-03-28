@@ -68,7 +68,7 @@ var dateMonth = dateObj.getMonth();
 var dateYear = dateObj.getFullYear();
 console.log(dateDay);
 
-$('#fecha').html(`${dateDay}/${dateMonth}/${dateYear}`) 
+$('#fecha').html(`${dateDay}/${dateMonth +1}/${dateYear}`) 
 
 /** **Funcionalidad de Squas */
 const dbRefObject = firebase.database().ref();
@@ -295,6 +295,7 @@ function organizar() {
     });
   });
 }
+
 $('#btn-reorganizar').on('click', function() {
   $('#sq1').empty();
   $('#sq2').empty();
@@ -307,6 +308,20 @@ $('#btn-reorganizar').on('click', function() {
   organizar();
   console.log(localStorage.squad1);
 });
+$('#btn-reorganizar2').on('click', function() {
+  $('#sq1').empty();
+  $('#sq2').empty();
+  $('#sq3').empty();
+  $('#sq4').empty();
+  $('#sq5').empty();
+  $('#sq6').empty();
+  $('#sq7').empty();
+  $('#sq8').empty();
+  organizar();
+  console.log(localStorage.squad1);
+});
+
+
 
 console.log(localStorage.squad1);
 

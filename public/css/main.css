@@ -3,162 +3,112 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: white;
-}
-.arrow2, .arrow3{
-  width: 65%;
-  height: 30%;
+  background-color: #ffc107;
 }
 .arrow2{
-  position: absolute;
-  top: 1em;
-  left: 1em;
+  top: 0.6em;
+  left: 0.1em;
+  position: relative;
+  display: none;
+}
+.arrow2, .arrow3{
+  height: 9vh;
+  width: 14vh;
 }
 .arrow3{
-  bottom: 1em !important;
-  right: 1em !important;
-  margin-right: 0;
-  position: absolute;
+  position: absolute !important;
+  top: 3em;
+  left: 12em;
+  display: none;
 }
 .box-sign-up{
   background-color: #fff;
-  width: 90%;
-  height: 45%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  padding: 2em;
   border-radius: 1vh;
-  box-shadow: 1px 1px 3px;
+  padding: 1em;
+  position: relative;
+  top: 3em;
 }
 .logo-laboratoria {
-  width: 70%;
-  height: 40%;
-  margin-bottom: 1.4em !important;
+  display: flex;
+  height: 50%;
+  margin: auto;
+  padding-top: 1em;
+  width: 80%;
+}
+.email-box, .password-box{
+  width: 80%;
   margin: auto;
   display: flex;
 }
-.btn-send, .btn-google{
-  width: 25vh !important;
-  margin: auto !important;
-  color: #fff;
-  font-weight: bold;
+.box-enter-account{
+  margin: auto;
+  display: flex;
   justify-content: center;
   align-items: center;
-  top: 50%; 
-  left: 50%;
-  transform: translate(-50%, -50%);
+  left: 0;
+  right: 0;
+  position: relative;
+  padding-bottom: 1em;
+}
+.btn-send, .btn-google {
+  font-weight: bold;
 }
 .btn-send{
   background-color: #ffc107;
 }
-.btn-google{
-  background-color: #ea4335;
-}
-.text-signup-google{
-  width: 10vh !important;
-  display: flex;
-  position: relative;
-  top: -1em;
-}
 .btn-send:hover{
   background-color: #cc9d0f;
 }
-
+.btn-google{
+  background-color: #ea4335;
+}
 .btn-google:hover{
   background-color: #a02017;
 }
-.text-signup-google{
-  width: 50% !important;
-  display: flex !important;
-  flex-flow: row;
-  line-height: 0.3em !important;
-}
-@media (min-width: 320px){
-  .box-sign-up{ 
+@media (min-width:400px){
+  .box-sign-up{
     width: 80%;
-    height: 70%;
-    z-index: 100;
+    left: 3em;
   }
-  .arrow2, .arrow3{
-    width: 20vh;
-    height: 10vh;
+}
+@media (min-width: 600px){
+  .btn-send, .btn-google{
+    width: 33vh !important;
+    height: 7vh;
+    margin-left: 0 !important;
   }
-  .btn-google, .btn-send{
+}
+@media (min-width:770px){
+  .box-sign-up{
     width: 60% !important;
-    font-size: 0.8em;
-  }
-  .email-box, .password-box{
-    margin: 0;
-  }
-  .text-signup-google{
-    margin: 0 auto !important;
-    top: -2.5em;
-    left: 1.5em;
-    font-size: 0.8em;
+    left: 11em;
+    top: 7em;
+    position: absolute;
+    margin: auto !important;
   }
 }
-@media (max-width:660px) {
+@media (min-width:940px){
   .box-sign-up{
-    width: 70% !important;
+    width: 50% !important;
+    left: 17em;
+    top: 7em;
+    position: absolute;
   }
 }
-@media (max-width:751px) {
+@media (min-width:990px){
   .box-sign-up{
-    width: 55% !important;
-    height: 70%;
-  }
-  .btn-send, .btn-google{
-    position: relative;
-    left: 50% !important;
-  }
-  .password-box{
-    width: 100% !important;
+    width: 40% !important;
+    left: 22em !important;
+    top: 7em;
+    position: absolute;
   }
 }
-@media (max-width:940px) {
+@media (min-width:1300px) {
   .box-sign-up{
-    width: 50%;
-    height: 75%;
-  }
-  .btn-send, .btn-google{
-    position: relative;
-    left: 50% !important;
-  }
-  .password-box{
-    width: 100% !important;
-  }
-}
-@media (max-width:1170px) {
-  .box-sign-up{
-    width: 50%;
-    height: 75%;
-  }
-  .btn-send, .btn-google{
-    position: relative;
-    left: 50% !important;
-  }
-  .password-box{
-    width: 100% !important;
-  }
-}
-@media (max-width:1300px) {
-  @media (max-width:1170px) {
-    .box-sign-up{
-      width: 35%;
-      height: 75%;
-    }
-    .btn-send, .btn-google{
-      position: relative;
-      left: 50% !important;
-    }
-    .password-box{
-      width: 100% !important;
-    }
+    width: 30% !important;
+    left: 32em !important;
+    top: 7em;
+    position: absolute;
   }
 }

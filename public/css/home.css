@@ -108,3 +108,11 @@
   color: rgb(34, 33, 33);
   padding-top: 0.2em;
 }
+
+.name, .email {
+  color: #000000;
+}
+
+.sign-out {
+  color: #000000;
+}

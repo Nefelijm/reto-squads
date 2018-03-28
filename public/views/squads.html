@@ -12,12 +12,13 @@
   <!-- google fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
   <!-- carpeta principal -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="../css/home.css">
   <!-- carpeta css -->
   <link rel="stylesheet" href="../css/squads.css">
 </head>
 <body>
-  <section>
+<section>
     <div class="row">
       <!-- logo laboratoria -->
       <div class="col l3 hide-on-med-and-down white box-logo-lab">
@@ -25,15 +26,39 @@
       </div>
       <!-- nav color de laboratoria -->
       <div class="col s12 l9 color-lab">
+          <div class="nav-wrapper show-on-medium-and-down hide-on-large-only">
+            <a href="#" data-activates="slide-out" class="button-collapse">
+                <i class="material-icons">menu</i>
+            </a>
+              
+          </div>
       </div>
     </div>
   </section>
+  <!-- sidenav -->
+  
+  <ul id="slide-out" class="side-nav">
+    <div class="row">
+      <li><div class="user-view">
+        <div class="background  grey lighten-2">
+        </div>
+        <a href="#!user"><img class="circle" src="../assets/docs/profile-pic.jpg"></a>
+        <a href="#!name"><span class="name">ALEJANDRA RAMIREZ</span></a>
+        <a href="#!email"><span class="email">alejandraramirez@gmail.com</span></a>
+      </div></li>
+    </div>
+    
+    <li class="text-uppercase box-nav"><i class="fa fa-book icon-nav" aria-hidden="true"></i> mis cursos</li>
+    <li class="text-uppercase box-nav"><i class="fa fa-users icon-nav" aria-hidden="true"></i>cohorts</li>
+    <li class="text-uppercase box-nav box-sign-out"><i class="fa fa-sign-out icon-nav" aria-hidden="true"></i> cerrar sesión</li>
+  </ul>
+  <!-- -->
   <!-- -->
   <div class="row">
     <div class="col l3 hide-on-med-and-down white div-box-nav">
       <ul>
-        <div class="row">
-          <ul class="user-box">
+        <div class="row user-box ">
+          <ul class="">
             <div class="col l3">
               <img class="responsive-img circle" src="../assets/docs/profile-pic.jpg" alt="Training-manager">
             </div>
@@ -46,7 +71,12 @@
         <div class="row list-board">
           <li class="text-uppercase box-nav"><i class="fa fa-book icon-nav" aria-hidden="true"></i> mis cursos</li>
           <li class="text-uppercase box-nav"><i class="fa fa-users icon-nav" aria-hidden="true"></i>cohorts</li>
-          <li class="text-uppercase box-nav box-sign-out"><i class="fa fa-sign-out icon-nav" aria-hidden="true"></i> cerrar sesión</li>
+          <li class="text-uppercase box-nav box-sign-out">
+            <a class="sign-out" href="signout.html">
+                <i class="fa fa-sign-out icon-nav" aria-hidden="true"></i> cerrar sesión
+            </a>
+  
+          </li>
         </div>
       </ul>
     </div>
@@ -73,7 +103,7 @@
             </button>
           </div>
           <div class="left hide-on-large-only">
-              <button id="btn-reorganizar" class="btn waves-effect waves-light #64ffda #1de9b6 teal accent-3 btn-send" name="action">Reorganizar
+              <button id="btn-reorganizar2" class="btn waves-effect waves-light #64ffda #1de9b6 teal accent-3 btn-send" name="action">Reorganizar
               </button>
           </div>
         </div>
@@ -87,36 +117,36 @@
       <!-- grupo de squads -->
       <div class="row">
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 1
               </div>
-              <div id="sq1" data-box="marco-1" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq1" data-box="marco-1" class=" dropheigth" style=" padding :2em 0">
               </div>
             </ul>
           </div>
         </div>
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 2
               </div>
             
-              <div id="sq2" data-box="marco-2"  class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq2" data-box="marco-2"  class=" dropheigth" style="padding :2em 0">
               </div>
             </ul>
           </div>
         </div>
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 3
               </div>
               
-              <div id="sq3" data-box="marco-3" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq3" data-box="marco-3" class=" dropheigth" style=" padding :2em 0">
   
               </div>
             </ul>
@@ -124,13 +154,13 @@
         </div>
 
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 4
               </div>
               
-              <div id="sq4" data-box="marco-4" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq4" data-box="marco-4" class=" dropheigth" style="padding :2em 0 ">
   
               </div>
             </ul>
@@ -138,13 +168,13 @@
         </div>
 
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 5
               </div>
               
-              <div id="sq5" data-box="marco-5" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq5" data-box="marco-5" class=" dropheigth" style="padding :2em 0 ">
   
               </div>
             </ul>
@@ -152,13 +182,13 @@
         </div>
 
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 6
               </div>
               
-              <div id="sq6" data-box="marco-6" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq6" data-box="marco-6" class=" dropheigth" style="padding :2em 0 ">
   
               </div>
             </ul>
@@ -166,13 +196,13 @@
         </div>
         
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 7
               </div>
               
-              <div id="sq7" data-box="marco-5" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq7" data-box="marco-5" class=" dropheigth" style=" padding :2em 0">
   
               </div>
             </ul>
@@ -180,12 +210,12 @@
         </div>
 
         <div class="col s12 l6">
-          <div class="squad1">
+          <div class="squad1 z-depth-3">
             <ul>
               <div class="name-squad">
                 Squad 8
               </div>
-              <div id="sq8" data-box="marco-5" class=" dropheigth" style=" margin:5px ; padding: 5px">
+              <div id="sq8" data-box="marco-5" class=" dropheigth" style="padding :2em 0 ">
   
               </div>
             </ul>
@@ -219,8 +249,8 @@
   <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase-database.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
-  <!-- Compiled and minified JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="../js/sidenav.js"></script>
   <!-- carpeta js -->
   <script src="../js/squads.js"></script>
 
