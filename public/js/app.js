@@ -700,6 +700,15 @@ dbRefObject.on('value', function(snap) {
   console.log(arrayemail1);
   // var template = `<input>${element.email}`;
   // $(dom).append(template);
+
+  arrayemail1.map(element => {
+    var templa = ` <div>${element}<div>`;
+    console.log(templa);
+    $('.alumna1').append(templa);
+
+
+  });
+
 });
 
 $('#gmail').on('click', function() {
