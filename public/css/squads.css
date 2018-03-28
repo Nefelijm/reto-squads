@@ -80,6 +80,9 @@
 .list-board {
   padding-left: 1em;
 }
+#toHome {
+  cursor: pointer;
+}
 /*table*/
 
 table{
