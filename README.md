@@ -111,12 +111,16 @@ Se realizó el testing del diseño de la herramienta en html/css con la cliente,
 
 ## Conclusiones
 
+La herramienta cumple con los feature lists priorizados y, adicionalmente se logró implementar:
+
+- La vista de impresión y exportación a excel de los squads conformados.
+
 ## Elaborado por
 
 ### Equipo de Desarrollo
 
 - [Carla Centeno](https://github.com/carlacentenor)
-- [Nefeli](https://github.com/Nefelijm)
+- [Nefeli Joñoruco](https://github.com/Nefelijm)
 - [Patricia Urco](https://github.com/Patty8909)
 
 ### UX Designers
