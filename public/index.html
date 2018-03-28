@@ -10,37 +10,52 @@
 </head>
 <body>
   <!-- arrow color: crimson -->
-  <div class="arrow2">
-    <img src="assets/images/arrow2.png" class="arrow2" alt="">
-  </div>
-  <div class="box container box-sign-up">
-  <div class="row">
-    <img src="assets/images/logo-nuevo-lab.png" class="logo-laboratoria center" alt="">
-    <div class="input-field m3 email-box">
-      <input id="email" type="text" class="validate">
-      <label class="active" for="first_name2">Correo Electrónico</label>
+  <div class="container">
+    <div class="row">
+      <div class="col l1 arrow2">
+        <img src="assets/images/arrow2.png" class="arrow2" alt="">
+      </div>
     </div>
   </div>
-  <div class="row">
-    <div class="input-field col s10 m3 password-box">
-      <input id="password" type="password" class="validate">
-      <label class="active" for="first_name2">Contraseña</label>
+ <!-- -->
+ <div class="container">
+   <div class="row">
+     <div class="col l2 box-sign-up center-align">
+        <div class="row">
+          <img src="assets/images/logo-nuevo-lab.png" class="logo-laboratoria center" alt="">
+        </div>
+        <div class="row">
+            <div class="input-field m3 email-box">
+              <input id="email" type="text" class="validate">
+              <label class="active" for="first_name2">Correo Electrónico</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field m3 password-box">
+              <input id="password" type="password" class="validate">
+              <label class="active" for="first_name2">Contraseña</label>
+            </div>
+        </div>
+        <div class="row box-enter-account">
+          <a id="btnCorreo" class="waves-effect waves-orange btn col m1 offset-m1 btn-send center">iniciar sesión</a>
+        </div>
+        <div class="row box-enter-account">
+            <p class="">También puedes</p>
+        </div>
+        <div class="row box-enter-account">
+            <a id="btnGoogle" class="waves-effect waves-light btn col m3 btn-google">ingresar con google</a>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="row center">
-  <a id="btnCorreo" class="waves-effect waves-orange btn col m1 offset-m1 btn-send center">iniciar sesión</a>
+ <!-- arrow color:  -->
+ <div class="container">
+    <div class="row">
+      <div class="col l1 arrow2">
+        <img src="assets/images/arrow3.png" class="arrow3" alt="">
+      </div>
+    </div>
   </div>
-  <div class="row text-signup-google">
-  <p class="">También puedes</p>
-  </div>
-  <div class="row">
-  <a id="btnGoogle" class="waves-effect waves-light btn col m3 btn-google">ingresar con google</a>
-  </div>
-</div>
-<!-- arrow color: crimson -->
-<div class="arrow3">
-  <img src="assets/images/arrow3.png" class="arrow3" alt="">
-</div>
 <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/4.9.0/firebase-auth.js"></script>
